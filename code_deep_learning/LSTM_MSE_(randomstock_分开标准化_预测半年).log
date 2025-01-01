@@ -1,0 +1,1243 @@
+
+2024-11-30 22:03:28,127 - INFO - Rolling Window 1: Training from 2010-01-01 to 2011-12-30, Predicting 2012-01-01 to 2012-06-30
+2024-11-30 22:03:51,439 - INFO - X_train shape: torch.Size([152294, 5, 123])
+2024-11-30 22:03:51,439 - INFO - y_train shape: torch.Size([152294, 1])
+2024-11-30 22:03:53,566 - INFO - X_val shape: torch.Size([36250, 5, 123])
+2024-11-30 22:03:53,566 - INFO - y_val shape: torch.Size([36250, 1])
+2024-11-30 22:03:53,566 - INFO - X_insample shape: torch.Size([188544, 5, 123])
+2024-11-30 22:03:53,566 - INFO - y_insample shape: torch.Size([188544, 1])
+2024-11-30 22:03:53,566 - INFO - y_insample_index shape: 188544
+2024-11-30 22:03:55,237 - INFO - X_test shape: torch.Size([49396, 5, 123])
+2024-11-30 22:03:55,237 - INFO - y_target shape: torch.Size([49396, 1])
+2024-11-30 22:03:55,237 - INFO - y_index shape: 49396
+2024-11-30 22:03:55,263 - INFO - 开始超参调优：
+2024-11-30 22:05:58,356 - INFO - Model configuration: {'hidden_size': 224, 'learning_rate': 0.03, 'batch_size': 1024, 'dropout_rate': 0.2}
+2024-11-30 22:05:58,371 - INFO - Epoch: 0
+2024-11-30 22:06:10,158 - INFO - val loss: 0.0039
+2024-11-30 22:06:10,159 - INFO - Epoch: 1
+2024-11-30 22:06:18,018 - INFO - val loss: 0.0040
+2024-11-30 22:06:18,018 - INFO - Epoch: 2
+2024-11-30 22:06:26,213 - INFO - val loss: 0.0038
+2024-11-30 22:06:26,213 - INFO - Epoch: 3
+2024-11-30 22:06:34,246 - INFO - val loss: 0.0038
+2024-11-30 22:06:34,246 - INFO - Epoch: 4
+2024-11-30 22:06:42,526 - INFO - val loss: 0.0038
+2024-11-30 22:06:42,526 - INFO - Epoch: 5
+2024-11-30 22:06:51,021 - INFO - val loss: 0.0039
+2024-11-30 22:06:51,021 - INFO - Epoch: 6
+2024-11-30 22:06:59,630 - INFO - val loss: 0.0039
+2024-11-30 22:06:59,630 - INFO - Epoch: 7
+2024-11-30 22:07:09,140 - INFO - val loss: 0.0040
+2024-11-30 22:07:09,140 - INFO - Epoch: 8
+2024-11-30 22:07:15,921 - INFO - val loss: 0.0040
+2024-11-30 22:07:15,921 - INFO - Epoch: 9
+2024-11-30 22:07:23,203 - INFO - val loss: 0.0040
+2024-11-30 22:07:23,203 - INFO - Epoch: 10
+2024-11-30 22:07:31,310 - INFO - val loss: 0.0040
+2024-11-30 22:07:31,310 - INFO - Epoch: 11
+2024-11-30 22:07:40,245 - INFO - val loss: 0.0039
+2024-11-30 22:07:40,245 - INFO - Epoch: 12
+2024-11-30 22:07:48,608 - INFO - val loss: 0.0039
+2024-11-30 22:07:48,608 - INFO - Epoch: 13
+2024-11-30 22:07:54,077 - INFO - val loss: 0.0040
+2024-11-30 22:07:54,077 - INFO - Early stopping triggered.
+2024-11-30 22:07:54,083 - INFO - best model loss: 0.0038, best model epoch: 3
+2024-11-30 22:07:59,542 - INFO - Window 1, Rank IC insample mean: 0.0656, Rank IC insample std: 0.1089
+2024-11-30 22:07:59,544 - INFO - Window 1, Rank IC outsample mean: 0.0476, Rank IC outsample std: 0.0407
+2024-11-30 22:08:00,564 - INFO - Rolling Window 2: Training from 2010-07-01 to 2012-06-30, Predicting 2012-07-01 to 2012-12-30
+2024-11-30 22:08:26,286 - INFO - X_train shape: torch.Size([164803, 5, 123])
+2024-11-30 22:08:26,286 - INFO - y_train shape: torch.Size([164803, 1])
+2024-11-30 22:08:28,561 - INFO - X_val shape: torch.Size([37765, 5, 123])
+2024-11-30 22:08:28,561 - INFO - y_val shape: torch.Size([37765, 1])
+2024-11-30 22:08:28,561 - INFO - X_insample shape: torch.Size([202568, 5, 123])
+2024-11-30 22:08:28,561 - INFO - y_insample shape: torch.Size([202568, 1])
+2024-11-30 22:08:28,561 - INFO - y_insample_index shape: 202568
+2024-11-30 22:08:30,375 - INFO - X_test shape: torch.Size([49077, 5, 123])
+2024-11-30 22:08:30,375 - INFO - y_target shape: torch.Size([49077, 1])
+2024-11-30 22:08:30,375 - INFO - y_index shape: 49077
+2024-11-30 22:08:30,409 - INFO - 开始超参调优：
+2024-11-30 22:10:19,931 - INFO - Model configuration: {'hidden_size': 256, 'learning_rate': 0.03, 'batch_size': 8192, 'dropout_rate': 0.1}
+2024-11-30 22:10:20,034 - INFO - Epoch: 0
+2024-11-30 22:10:24,732 - INFO - val loss: 0.0065
+2024-11-30 22:10:24,732 - INFO - Epoch: 1
+2024-11-30 22:10:31,115 - INFO - val loss: 0.0035
+2024-11-30 22:10:31,116 - INFO - Epoch: 2
+2024-11-30 22:10:36,897 - INFO - val loss: 0.0028
+2024-11-30 22:10:36,898 - INFO - Epoch: 3
+2024-11-30 22:10:42,562 - INFO - val loss: 0.0028
+2024-11-30 22:10:42,563 - INFO - Epoch: 4
+2024-11-30 22:10:47,534 - INFO - val loss: 0.0027
+2024-11-30 22:10:47,534 - INFO - Epoch: 5
+2024-11-30 22:10:53,529 - INFO - val loss: 0.0027
+2024-11-30 22:10:53,529 - INFO - Epoch: 6
+2024-11-30 22:10:58,261 - INFO - val loss: 0.0027
+2024-11-30 22:10:58,262 - INFO - Epoch: 7
+2024-11-30 22:11:03,773 - INFO - val loss: 0.0027
+2024-11-30 22:11:03,774 - INFO - Epoch: 8
+2024-11-30 22:11:09,349 - INFO - val loss: 0.0027
+2024-11-30 22:11:09,349 - INFO - Epoch: 9
+2024-11-30 22:11:14,189 - INFO - val loss: 0.0027
+2024-11-30 22:11:14,189 - INFO - Epoch: 10
+2024-11-30 22:11:19,455 - INFO - val loss: 0.0027
+2024-11-30 22:11:19,455 - INFO - Epoch: 11
+2024-11-30 22:11:25,080 - INFO - val loss: 0.0027
+2024-11-30 22:11:25,080 - INFO - Epoch: 12
+2024-11-30 22:11:30,483 - INFO - val loss: 0.0027
+2024-11-30 22:11:30,484 - INFO - Epoch: 13
+2024-11-30 22:11:35,523 - INFO - val loss: 0.0027
+2024-11-30 22:11:35,524 - INFO - Epoch: 14
+2024-11-30 22:11:40,521 - INFO - val loss: 0.0027
+2024-11-30 22:11:40,521 - INFO - Epoch: 15
+2024-11-30 22:11:45,634 - INFO - val loss: 0.0027
+2024-11-30 22:11:45,634 - INFO - Epoch: 16
+2024-11-30 22:11:50,473 - INFO - val loss: 0.0027
+2024-11-30 22:11:50,473 - INFO - Epoch: 17
+2024-11-30 22:11:56,507 - INFO - val loss: 0.0027
+2024-11-30 22:11:56,508 - INFO - Epoch: 18
+2024-11-30 22:12:01,640 - INFO - val loss: 0.0027
+2024-11-30 22:12:01,640 - INFO - Epoch: 19
+2024-11-30 22:12:07,505 - INFO - val loss: 0.0027
+2024-11-30 22:12:07,505 - INFO - Epoch: 20
+2024-11-30 22:12:12,772 - INFO - val loss: 0.0027
+2024-11-30 22:12:12,772 - INFO - Epoch: 21
+2024-11-30 22:12:18,340 - INFO - val loss: 0.0027
+2024-11-30 22:12:18,340 - INFO - Epoch: 22
+2024-11-30 22:12:24,208 - INFO - val loss: 0.0027
+2024-11-30 22:12:24,208 - INFO - Epoch: 23
+2024-11-30 22:12:30,648 - INFO - val loss: 0.0027
+2024-11-30 22:12:30,648 - INFO - Epoch: 24
+2024-11-30 22:12:36,022 - INFO - val loss: 0.0027
+2024-11-30 22:12:36,023 - INFO - Epoch: 25
+2024-11-30 22:12:41,492 - INFO - val loss: 0.0027
+2024-11-30 22:12:41,492 - INFO - Epoch: 26
+2024-11-30 22:12:47,726 - INFO - val loss: 0.0027
+2024-11-30 22:12:47,726 - INFO - Early stopping triggered.
+2024-11-30 22:12:47,734 - INFO - best model loss: 0.0027, best model epoch: 16
+2024-11-30 22:12:55,562 - INFO - Window 2, Rank IC insample mean: 0.0564, Rank IC insample std: 0.0228
+2024-11-30 22:12:55,562 - INFO - Window 2, Rank IC outsample mean: 0.0384, Rank IC outsample std: 0.0131
+2024-11-30 22:12:56,567 - INFO - Rolling Window 3: Training from 2011-01-01 to 2012-12-30, Predicting 2013-01-01 to 2013-06-30
+2024-11-30 22:13:20,469 - INFO - X_train shape: torch.Size([173504, 5, 123])
+2024-11-30 22:13:20,469 - INFO - y_train shape: torch.Size([173504, 1])
+2024-11-30 22:13:22,741 - INFO - X_val shape: torch.Size([39403, 5, 123])
+2024-11-30 22:13:22,741 - INFO - y_val shape: torch.Size([39403, 1])
+2024-11-30 22:13:22,741 - INFO - X_insample shape: torch.Size([212907, 5, 123])
+2024-11-30 22:13:22,742 - INFO - y_insample shape: torch.Size([212907, 1])
+2024-11-30 22:13:22,742 - INFO - y_insample_index shape: 212907
+2024-11-30 22:13:24,257 - INFO - X_test shape: torch.Size([49401, 5, 123])
+2024-11-30 22:13:24,257 - INFO - y_target shape: torch.Size([49401, 1])
+2024-11-30 22:13:24,257 - INFO - y_index shape: 49401
+2024-11-30 22:13:24,287 - INFO - 开始超参调优：
+2024-11-30 22:16:16,441 - INFO - Model configuration: {'hidden_size': 320, 'learning_rate': 0.0001, 'batch_size': 512, 'dropout_rate': 0.1}
+2024-11-30 22:16:16,547 - INFO - Epoch: 0
+2024-11-30 22:16:33,736 - INFO - val loss: 0.0056
+2024-11-30 22:16:33,736 - INFO - Epoch: 1
+2024-11-30 22:16:49,685 - INFO - val loss: 0.0056
+2024-11-30 22:16:49,685 - INFO - Epoch: 2
+2024-11-30 22:17:05,593 - INFO - val loss: 0.0056
+2024-11-30 22:17:05,593 - INFO - Epoch: 3
+2024-11-30 22:17:21,196 - INFO - val loss: 0.0056
+2024-11-30 22:17:21,197 - INFO - Epoch: 4
+2024-11-30 22:17:37,373 - INFO - val loss: 0.0057
+2024-11-30 22:17:37,373 - INFO - Epoch: 5
+2024-11-30 22:17:52,779 - INFO - val loss: 0.0057
+2024-11-30 22:17:52,779 - INFO - Epoch: 6
+2024-11-30 22:18:04,470 - INFO - val loss: 0.0057
+2024-11-30 22:18:04,470 - INFO - Epoch: 7
+2024-11-30 22:18:16,260 - INFO - val loss: 0.0057
+2024-11-30 22:18:16,261 - INFO - Epoch: 8
+2024-11-30 22:18:32,110 - INFO - val loss: 0.0057
+2024-11-30 22:18:32,110 - INFO - Epoch: 9
+2024-11-30 22:18:47,661 - INFO - val loss: 0.0058
+2024-11-30 22:18:47,661 - INFO - Epoch: 10
+2024-11-30 22:19:03,779 - INFO - val loss: 0.0058
+2024-11-30 22:19:03,780 - INFO - Early stopping triggered.
+2024-11-30 22:19:03,793 - INFO - best model loss: 0.0056, best model epoch: 0
+2024-11-30 22:19:21,581 - INFO - Window 3, Rank IC insample mean: 0.0926, Rank IC insample std: 0.1577
+2024-11-30 22:19:21,581 - INFO - Window 3, Rank IC outsample mean: 0.0609, Rank IC outsample std: -0.0284
+2024-11-30 22:19:22,604 - INFO - Rolling Window 4: Training from 2011-07-01 to 2013-06-30, Predicting 2013-07-01 to 2013-12-30
+2024-11-30 22:19:48,783 - INFO - X_train shape: torch.Size([184222, 5, 123])
+2024-11-30 22:19:48,784 - INFO - y_train shape: torch.Size([184222, 1])
+2024-11-30 22:19:51,383 - INFO - X_val shape: torch.Size([39516, 5, 123])
+2024-11-30 22:19:51,383 - INFO - y_val shape: torch.Size([39516, 1])
+2024-11-30 22:19:51,383 - INFO - X_insample shape: torch.Size([223738, 5, 123])
+2024-11-30 22:19:51,383 - INFO - y_insample shape: torch.Size([223738, 1])
+2024-11-30 22:19:51,383 - INFO - y_insample_index shape: 223738
+2024-11-30 22:19:53,208 - INFO - X_test shape: torch.Size([49339, 5, 123])
+2024-11-30 22:19:53,208 - INFO - y_target shape: torch.Size([49339, 1])
+2024-11-30 22:19:53,208 - INFO - y_index shape: 49339
+2024-11-30 22:19:53,246 - INFO - 开始超参调优：
+2024-11-30 22:21:57,634 - INFO - Model configuration: {'hidden_size': 96, 'learning_rate': 0.001, 'batch_size': 4096, 'dropout_rate': 0.25}
+2024-11-30 22:21:57,735 - INFO - Epoch: 0
+2024-11-30 22:22:03,470 - INFO - val loss: 0.0035
+2024-11-30 22:22:03,470 - INFO - Epoch: 1
+2024-11-30 22:22:07,958 - INFO - val loss: 0.0035
+2024-11-30 22:22:07,959 - INFO - Epoch: 2
+2024-11-30 22:22:11,642 - INFO - val loss: 0.0035
+2024-11-30 22:22:11,642 - INFO - Epoch: 3
+2024-11-30 22:22:17,900 - INFO - val loss: 0.0035
+2024-11-30 22:22:17,900 - INFO - Epoch: 4
+2024-11-30 22:22:21,101 - INFO - val loss: 0.0035
+2024-11-30 22:22:21,101 - INFO - Epoch: 5
+2024-11-30 22:22:24,400 - INFO - val loss: 0.0035
+2024-11-30 22:22:24,400 - INFO - Epoch: 6
+2024-11-30 22:22:27,667 - INFO - val loss: 0.0035
+2024-11-30 22:22:27,667 - INFO - Epoch: 7
+2024-11-30 22:22:33,524 - INFO - val loss: 0.0035
+2024-11-30 22:22:33,524 - INFO - Epoch: 8
+2024-11-30 22:22:38,971 - INFO - val loss: 0.0035
+2024-11-30 22:22:38,971 - INFO - Epoch: 9
+2024-11-30 22:22:42,119 - INFO - val loss: 0.0036
+2024-11-30 22:22:42,119 - INFO - Epoch: 10
+2024-11-30 22:22:45,821 - INFO - val loss: 0.0036
+2024-11-30 22:22:45,821 - INFO - Epoch: 11
+2024-11-30 22:22:48,942 - INFO - val loss: 0.0036
+2024-11-30 22:22:48,942 - INFO - Epoch: 12
+2024-11-30 22:22:52,436 - INFO - val loss: 0.0036
+2024-11-30 22:22:52,437 - INFO - Epoch: 13
+2024-11-30 22:22:55,541 - INFO - val loss: 0.0036
+2024-11-30 22:22:55,541 - INFO - Early stopping triggered.
+2024-11-30 22:22:55,543 - INFO - best model loss: 0.0035, best model epoch: 3
+2024-11-30 22:23:00,124 - INFO - Window 4, Rank IC insample mean: 0.0755, Rank IC insample std: 0.1114
+2024-11-30 22:23:00,124 - INFO - Window 4, Rank IC outsample mean: 0.0647, Rank IC outsample std: 0.0244
+2024-11-30 22:23:01,216 - INFO - Rolling Window 5: Training from 2012-01-01 to 2013-12-30, Predicting 2014-01-01 to 2014-06-30
+2024-11-30 22:23:26,247 - INFO - X_train shape: torch.Size([187246, 5, 123])
+2024-11-30 22:23:26,248 - INFO - y_train shape: torch.Size([187246, 1])
+2024-11-30 22:23:28,642 - INFO - X_val shape: torch.Size([39468, 5, 123])
+2024-11-30 22:23:28,642 - INFO - y_val shape: torch.Size([39468, 1])
+2024-11-30 22:23:28,642 - INFO - X_insample shape: torch.Size([226714, 5, 123])
+2024-11-30 22:23:28,642 - INFO - y_insample shape: torch.Size([226714, 1])
+2024-11-30 22:23:28,642 - INFO - y_insample_index shape: 226714
+2024-11-30 22:23:30,445 - INFO - X_test shape: torch.Size([52657, 5, 123])
+2024-11-30 22:23:30,445 - INFO - y_target shape: torch.Size([52657, 1])
+2024-11-30 22:23:30,445 - INFO - y_index shape: 52657
+2024-11-30 22:23:30,509 - INFO - 开始超参调优：
+2024-11-30 22:25:34,974 - INFO - Model configuration: {'hidden_size': 256, 'learning_rate': 0.03, 'batch_size': 1024, 'dropout_rate': 0.15000000000000002}
+2024-11-30 22:25:35,087 - INFO - Epoch: 0
+2024-11-30 22:25:45,975 - INFO - val loss: 0.0035
+2024-11-30 22:25:45,975 - INFO - Epoch: 1
+2024-11-30 22:25:56,338 - INFO - val loss: 0.0034
+2024-11-30 22:25:56,339 - INFO - Epoch: 2
+2024-11-30 22:26:06,035 - INFO - val loss: 0.0035
+2024-11-30 22:26:06,035 - INFO - Epoch: 3
+2024-11-30 22:26:15,506 - INFO - val loss: 0.0035
+2024-11-30 22:26:15,506 - INFO - Epoch: 4
+2024-11-30 22:26:25,438 - INFO - val loss: 0.0035
+2024-11-30 22:26:25,438 - INFO - Epoch: 5
+2024-11-30 22:26:36,241 - INFO - val loss: 0.0034
+2024-11-30 22:26:36,241 - INFO - Epoch: 6
+2024-11-30 22:26:45,713 - INFO - val loss: 0.0034
+2024-11-30 22:26:45,713 - INFO - Epoch: 7
+2024-11-30 22:26:55,439 - INFO - val loss: 0.0034
+2024-11-30 22:26:55,439 - INFO - Epoch: 8
+2024-11-30 22:27:05,509 - INFO - val loss: 0.0034
+2024-11-30 22:27:05,509 - INFO - Epoch: 9
+2024-11-30 22:27:15,245 - INFO - val loss: 0.0034
+2024-11-30 22:27:15,245 - INFO - Epoch: 10
+2024-11-30 22:27:24,544 - INFO - val loss: 0.0034
+2024-11-30 22:27:24,544 - INFO - Epoch: 11
+2024-11-30 22:27:34,982 - INFO - val loss: 0.0034
+2024-11-30 22:27:34,983 - INFO - Epoch: 12
+2024-11-30 22:27:43,756 - INFO - val loss: 0.0034
+2024-11-30 22:27:43,756 - INFO - Epoch: 13
+2024-11-30 22:27:50,151 - INFO - val loss: 0.0034
+2024-11-30 22:27:50,151 - INFO - Epoch: 14
+2024-11-30 22:28:00,848 - INFO - val loss: 0.0034
+2024-11-30 22:28:00,848 - INFO - Epoch: 15
+2024-11-30 22:28:11,316 - INFO - val loss: 0.0034
+2024-11-30 22:28:11,316 - INFO - Epoch: 16
+2024-11-30 22:28:21,238 - INFO - val loss: 0.0035
+2024-11-30 22:28:21,238 - INFO - Epoch: 17
+2024-11-30 22:28:27,767 - INFO - val loss: 0.0034
+2024-11-30 22:28:27,767 - INFO - Early stopping triggered.
+2024-11-30 22:28:27,774 - INFO - best model loss: 0.0034, best model epoch: 7
+2024-11-30 22:28:40,195 - INFO - Window 5, Rank IC insample mean: 0.0490, Rank IC insample std: 0.0342
+2024-11-30 22:28:40,196 - INFO - Window 5, Rank IC outsample mean: 0.0450, Rank IC outsample std: 0.0260
+2024-11-30 22:28:41,363 - INFO - Rolling Window 6: Training from 2012-07-01 to 2014-06-30, Predicting 2014-07-01 to 2014-12-30
+2024-11-30 22:29:06,281 - INFO - X_train shape: torch.Size([192268, 5, 123])
+2024-11-30 22:29:06,282 - INFO - y_train shape: torch.Size([192268, 1])
+2024-11-30 22:29:08,740 - INFO - X_val shape: torch.Size([40246, 5, 123])
+2024-11-30 22:29:08,740 - INFO - y_val shape: torch.Size([40246, 1])
+2024-11-30 22:29:08,740 - INFO - X_insample shape: torch.Size([232514, 5, 123])
+2024-11-30 22:29:08,740 - INFO - y_insample shape: torch.Size([232514, 1])
+2024-11-30 22:29:08,740 - INFO - y_insample_index shape: 232514
+2024-11-30 22:29:10,538 - INFO - X_test shape: torch.Size([50876, 5, 123])
+2024-11-30 22:29:10,538 - INFO - y_target shape: torch.Size([50876, 1])
+2024-11-30 22:29:10,538 - INFO - y_index shape: 50876
+2024-11-30 22:29:10,572 - INFO - 开始超参调优：
+2024-11-30 22:31:08,703 - INFO - Model configuration: {'hidden_size': 32, 'learning_rate': 0.03, 'batch_size': 4096, 'dropout_rate': 0.1}
+2024-11-30 22:31:08,808 - INFO - Epoch: 0
+2024-11-30 22:31:12,953 - INFO - val loss: 0.0028
+2024-11-30 22:31:12,954 - INFO - Epoch: 1
+2024-11-30 22:31:16,504 - INFO - val loss: 0.0028
+2024-11-30 22:31:16,504 - INFO - Epoch: 2
+2024-11-30 22:31:19,872 - INFO - val loss: 0.0028
+2024-11-30 22:31:19,873 - INFO - Epoch: 3
+2024-11-30 22:31:23,287 - INFO - val loss: 0.0028
+2024-11-30 22:31:23,287 - INFO - Epoch: 4
+2024-11-30 22:31:26,845 - INFO - val loss: 0.0028
+2024-11-30 22:31:26,845 - INFO - Epoch: 5
+2024-11-30 22:31:30,179 - INFO - val loss: 0.0028
+2024-11-30 22:31:30,179 - INFO - Epoch: 6
+2024-11-30 22:31:33,520 - INFO - val loss: 0.0028
+2024-11-30 22:31:33,520 - INFO - Epoch: 7
+2024-11-30 22:31:36,885 - INFO - val loss: 0.0028
+2024-11-30 22:31:36,885 - INFO - Epoch: 8
+2024-11-30 22:31:40,364 - INFO - val loss: 0.0028
+2024-11-30 22:31:40,364 - INFO - Epoch: 9
+2024-11-30 22:31:43,917 - INFO - val loss: 0.0028
+2024-11-30 22:31:43,917 - INFO - Epoch: 10
+2024-11-30 22:31:47,264 - INFO - val loss: 0.0028
+2024-11-30 22:31:47,264 - INFO - Epoch: 11
+2024-11-30 22:31:50,841 - INFO - val loss: 0.0028
+2024-11-30 22:31:50,841 - INFO - Early stopping triggered.
+2024-11-30 22:31:50,842 - INFO - best model loss: 0.0028, best model epoch: 1
+2024-11-30 22:31:55,165 - INFO - Window 6, Rank IC insample mean: 0.0778, Rank IC insample std: 0.1046
+2024-11-30 22:31:55,166 - INFO - Window 6, Rank IC outsample mean: 0.0591, Rank IC outsample std: 0.0433
+2024-11-30 22:31:56,283 - INFO - Rolling Window 7: Training from 2013-01-01 to 2014-12-30, Predicting 2015-01-01 to 2015-06-30
+2024-11-30 22:32:22,552 - INFO - X_train shape: torch.Size([191123, 5, 123])
+2024-11-30 22:32:22,553 - INFO - y_train shape: torch.Size([191123, 1])
+2024-11-30 22:32:24,899 - INFO - X_val shape: torch.Size([40815, 5, 123])
+2024-11-30 22:32:24,899 - INFO - y_val shape: torch.Size([40815, 1])
+2024-11-30 22:32:24,899 - INFO - X_insample shape: torch.Size([231938, 5, 123])
+2024-11-30 22:32:24,899 - INFO - y_insample shape: torch.Size([231938, 1])
+2024-11-30 22:32:24,899 - INFO - y_insample_index shape: 231938
+2024-11-30 22:32:26,858 - INFO - X_test shape: torch.Size([55561, 5, 123])
+2024-11-30 22:32:26,858 - INFO - y_target shape: torch.Size([55561, 1])
+2024-11-30 22:32:26,858 - INFO - y_index shape: 55561
+2024-11-30 22:32:26,894 - INFO - 开始超参调优：
+2024-11-30 22:35:00,646 - INFO - Model configuration: {'hidden_size': 288, 'learning_rate': 0.01, 'batch_size': 512, 'dropout_rate': 0.1}
+2024-11-30 22:35:00,752 - INFO - Epoch: 0
+2024-11-30 22:35:13,338 - INFO - val loss: 0.0040
+2024-11-30 22:35:13,339 - INFO - Epoch: 1
+2024-11-30 22:35:23,788 - INFO - val loss: 0.0040
+2024-11-30 22:35:23,788 - INFO - Epoch: 2
+2024-11-30 22:35:39,282 - INFO - val loss: 0.0040
+2024-11-30 22:35:39,282 - INFO - Epoch: 3
+2024-11-30 22:35:50,748 - INFO - val loss: 0.0041
+2024-11-30 22:35:50,748 - INFO - Epoch: 4
+2024-11-30 22:36:09,434 - INFO - val loss: 0.0041
+2024-11-30 22:36:09,434 - INFO - Epoch: 5
+2024-11-30 22:36:26,042 - INFO - val loss: 0.0041
+2024-11-30 22:36:26,042 - INFO - Epoch: 6
+2024-11-30 22:36:43,243 - INFO - val loss: 0.0041
+2024-11-30 22:36:43,243 - INFO - Epoch: 7
+2024-11-30 22:37:01,026 - INFO - val loss: 0.0042
+2024-11-30 22:37:01,026 - INFO - Epoch: 8
+2024-11-30 22:37:16,094 - INFO - val loss: 0.0043
+2024-11-30 22:37:16,094 - INFO - Epoch: 9
+2024-11-30 22:37:33,721 - INFO - val loss: 0.0042
+2024-11-30 22:37:33,721 - INFO - Epoch: 10
+2024-11-30 22:37:51,342 - INFO - val loss: 0.0042
+2024-11-30 22:37:51,342 - INFO - Early stopping triggered.
+2024-11-30 22:37:51,350 - INFO - best model loss: 0.0040, best model epoch: 0
+2024-11-30 22:38:10,473 - INFO - Window 7, Rank IC insample mean: 0.1067, Rank IC insample std: 0.1766
+2024-11-30 22:38:10,473 - INFO - Window 7, Rank IC outsample mean: 0.0909, Rank IC outsample std: 0.0161
+2024-11-30 22:38:11,537 - INFO - Rolling Window 8: Training from 2013-07-01 to 2015-06-30, Predicting 2015-07-01 to 2015-12-30
+2024-11-30 22:38:37,627 - INFO - X_train shape: torch.Size([195723, 5, 123])
+2024-11-30 22:38:37,627 - INFO - y_train shape: torch.Size([195723, 1])
+2024-11-30 22:38:40,255 - INFO - X_val shape: torch.Size([42566, 5, 123])
+2024-11-30 22:38:40,255 - INFO - y_val shape: torch.Size([42566, 1])
+2024-11-30 22:38:40,255 - INFO - X_insample shape: torch.Size([238289, 5, 123])
+2024-11-30 22:38:40,255 - INFO - y_insample shape: torch.Size([238289, 1])
+2024-11-30 22:38:40,255 - INFO - y_insample_index shape: 238289
+2024-11-30 22:38:42,137 - INFO - X_test shape: torch.Size([55596, 5, 123])
+2024-11-30 22:38:42,137 - INFO - y_target shape: torch.Size([55596, 1])
+2024-11-30 22:38:42,137 - INFO - y_index shape: 55596
+2024-11-30 22:38:42,172 - INFO - 开始超参调优：
+2024-11-30 22:40:55,032 - INFO - Model configuration: {'hidden_size': 96, 'learning_rate': 0.05, 'batch_size': 512, 'dropout_rate': 0.15000000000000002}
+2024-11-30 22:40:55,134 - INFO - Epoch: 0
+2024-11-30 22:41:06,124 - INFO - val loss: 0.0157
+2024-11-30 22:41:06,124 - INFO - Epoch: 1
+2024-11-30 22:41:18,397 - INFO - val loss: 0.0157
+2024-11-30 22:41:18,398 - INFO - Epoch: 2
+2024-11-30 22:41:30,267 - INFO - val loss: 0.0156
+2024-11-30 22:41:30,267 - INFO - Epoch: 3
+2024-11-30 22:41:42,587 - INFO - val loss: 0.0157
+2024-11-30 22:41:42,587 - INFO - Epoch: 4
+2024-11-30 22:41:54,105 - INFO - val loss: 0.0157
+2024-11-30 22:41:54,106 - INFO - Epoch: 5
+2024-11-30 22:42:06,116 - INFO - val loss: 0.0157
+2024-11-30 22:42:06,116 - INFO - Epoch: 6
+2024-11-30 22:42:17,449 - INFO - val loss: 0.0156
+2024-11-30 22:42:17,450 - INFO - Epoch: 7
+2024-11-30 22:42:29,607 - INFO - val loss: 0.0157
+2024-11-30 22:42:29,607 - INFO - Epoch: 8
+2024-11-30 22:42:42,034 - INFO - val loss: 0.0157
+2024-11-30 22:42:42,035 - INFO - Epoch: 9
+2024-11-30 22:42:53,460 - INFO - val loss: 0.0157
+2024-11-30 22:42:53,460 - INFO - Epoch: 10
+2024-11-30 22:43:05,437 - INFO - val loss: 0.0156
+2024-11-30 22:43:05,438 - INFO - Epoch: 11
+2024-11-30 22:43:17,032 - INFO - val loss: 0.0157
+2024-11-30 22:43:17,032 - INFO - Epoch: 12
+2024-11-30 22:43:28,214 - INFO - val loss: 0.0157
+2024-11-30 22:43:28,214 - INFO - Epoch: 13
+2024-11-30 22:43:40,054 - INFO - val loss: 0.0157
+2024-11-30 22:43:40,054 - INFO - Epoch: 14
+2024-11-30 22:43:51,487 - INFO - val loss: 0.0157
+2024-11-30 22:43:51,488 - INFO - Epoch: 15
+2024-11-30 22:44:02,787 - INFO - val loss: 0.0157
+2024-11-30 22:44:02,787 - INFO - Epoch: 16
+2024-11-30 22:44:14,626 - INFO - val loss: 0.0157
+2024-11-30 22:44:14,626 - INFO - Early stopping triggered.
+2024-11-30 22:44:14,629 - INFO - best model loss: 0.0156, best model epoch: 6
+2024-11-30 22:44:21,866 - INFO - Window 8, Rank IC insample mean: 0.0778, Rank IC insample std: 0.0833
+2024-11-30 22:44:21,866 - INFO - Window 8, Rank IC outsample mean: 0.1368, Rank IC outsample std: 0.0342
+2024-11-30 22:44:22,994 - INFO - Rolling Window 9: Training from 2014-01-01 to 2015-12-30, Predicting 2016-01-01 to 2016-06-30
+2024-11-30 22:44:53,389 - INFO - X_train shape: torch.Size([200883, 5, 123])
+2024-11-30 22:44:53,390 - INFO - y_train shape: torch.Size([200883, 1])
+2024-11-30 22:44:56,194 - INFO - X_val shape: torch.Size([44476, 5, 123])
+2024-11-30 22:44:56,194 - INFO - y_val shape: torch.Size([44476, 1])
+2024-11-30 22:44:56,194 - INFO - X_insample shape: torch.Size([245359, 5, 123])
+2024-11-30 22:44:56,194 - INFO - y_insample shape: torch.Size([245359, 1])
+2024-11-30 22:44:56,194 - INFO - y_insample_index shape: 245359
+2024-11-30 22:44:58,311 - INFO - X_test shape: torch.Size([59324, 5, 123])
+2024-11-30 22:44:58,312 - INFO - y_target shape: torch.Size([59324, 1])
+2024-11-30 22:44:58,312 - INFO - y_index shape: 59324
+2024-11-30 22:44:58,358 - INFO - 开始超参调优：
+2024-11-30 22:47:23,053 - INFO - Model configuration: {'hidden_size': 128, 'learning_rate': 0.05, 'batch_size': 2048, 'dropout_rate': 0.3}
+2024-11-30 22:47:23,160 - INFO - Epoch: 0
+2024-11-30 22:47:31,030 - INFO - val loss: 0.0075
+2024-11-30 22:47:31,030 - INFO - Epoch: 1
+2024-11-30 22:47:35,320 - INFO - val loss: 0.0075
+2024-11-30 22:47:35,320 - INFO - Epoch: 2
+2024-11-30 22:47:42,851 - INFO - val loss: 0.0075
+2024-11-30 22:47:42,851 - INFO - Epoch: 3
+2024-11-30 22:47:50,539 - INFO - val loss: 0.0075
+2024-11-30 22:47:50,539 - INFO - Epoch: 4
+2024-11-30 22:47:54,894 - INFO - val loss: 0.0075
+2024-11-30 22:47:54,894 - INFO - Epoch: 5
+2024-11-30 22:47:59,529 - INFO - val loss: 0.0075
+2024-11-30 22:47:59,530 - INFO - Epoch: 6
+2024-11-30 22:48:04,161 - INFO - val loss: 0.0075
+2024-11-30 22:48:04,161 - INFO - Epoch: 7
+2024-11-30 22:48:09,187 - INFO - val loss: 0.0075
+2024-11-30 22:48:09,188 - INFO - Epoch: 8
+2024-11-30 22:48:16,555 - INFO - val loss: 0.0074
+2024-11-30 22:48:16,555 - INFO - Epoch: 9
+2024-11-30 22:48:21,341 - INFO - val loss: 0.0075
+2024-11-30 22:48:21,341 - INFO - Epoch: 10
+2024-11-30 22:48:26,992 - INFO - val loss: 0.0075
+2024-11-30 22:48:26,992 - INFO - Epoch: 11
+2024-11-30 22:48:31,976 - INFO - val loss: 0.0074
+2024-11-30 22:48:31,977 - INFO - Epoch: 12
+2024-11-30 22:48:37,287 - INFO - val loss: 0.0074
+2024-11-30 22:48:37,287 - INFO - Epoch: 13
+2024-11-30 22:48:44,715 - INFO - val loss: 0.0074
+2024-11-30 22:48:44,715 - INFO - Epoch: 14
+2024-11-30 22:48:51,796 - INFO - val loss: 0.0074
+2024-11-30 22:48:51,796 - INFO - Epoch: 15
+2024-11-30 22:49:00,621 - INFO - val loss: 0.0074
+2024-11-30 22:49:00,621 - INFO - Epoch: 16
+2024-11-30 22:49:05,957 - INFO - val loss: 0.0075
+2024-11-30 22:49:05,958 - INFO - Epoch: 17
+2024-11-30 22:49:12,594 - INFO - val loss: 0.0075
+2024-11-30 22:49:12,595 - INFO - Epoch: 18
+2024-11-30 22:49:16,749 - INFO - val loss: 0.0075
+2024-11-30 22:49:16,749 - INFO - Epoch: 19
+2024-11-30 22:49:21,240 - INFO - val loss: 0.0075
+2024-11-30 22:49:21,240 - INFO - Epoch: 20
+2024-11-30 22:49:25,951 - INFO - val loss: 0.0075
+2024-11-30 22:49:25,951 - INFO - Epoch: 21
+2024-11-30 22:49:34,766 - INFO - val loss: 0.0075
+2024-11-30 22:49:34,766 - INFO - Epoch: 22
+2024-11-30 22:49:43,719 - INFO - val loss: 0.0075
+2024-11-30 22:49:43,719 - INFO - Early stopping triggered.
+2024-11-30 22:49:43,722 - INFO - best model loss: 0.0074, best model epoch: 12
+2024-11-30 22:49:54,000 - INFO - Window 9, Rank IC insample mean: 0.0721, Rank IC insample std: 0.0966
+2024-11-30 22:49:54,000 - INFO - Window 9, Rank IC outsample mean: 0.0504, Rank IC outsample std: 0.0520
+2024-11-30 22:49:55,225 - INFO - Rolling Window 10: Training from 2014-07-01 to 2016-06-30, Predicting 2016-07-01 to 2016-12-30
+2024-11-30 22:50:25,308 - INFO - X_train shape: torch.Size([207963, 5, 123])
+2024-11-30 22:50:25,309 - INFO - y_train shape: torch.Size([207963, 1])
+2024-11-30 22:50:28,238 - INFO - X_val shape: torch.Size([45280, 5, 123])
+2024-11-30 22:50:28,239 - INFO - y_val shape: torch.Size([45280, 1])
+2024-11-30 22:50:28,239 - INFO - X_insample shape: torch.Size([253243, 5, 123])
+2024-11-30 22:50:28,239 - INFO - y_insample shape: torch.Size([253243, 1])
+2024-11-30 22:50:28,239 - INFO - y_insample_index shape: 253243
+2024-11-30 22:50:30,424 - INFO - X_test shape: torch.Size([58297, 5, 123])
+2024-11-30 22:50:30,425 - INFO - y_target shape: torch.Size([58297, 1])
+2024-11-30 22:50:30,425 - INFO - y_index shape: 58297
+2024-11-30 22:50:30,472 - INFO - 开始超参调优：
+2024-11-30 22:53:13,182 - INFO - Model configuration: {'hidden_size': 192, 'learning_rate': 0.03, 'batch_size': 4096, 'dropout_rate': 0.25}
+2024-11-30 22:53:13,306 - INFO - Epoch: 0
+2024-11-30 22:53:20,282 - INFO - val loss: 0.0035
+2024-11-30 22:53:20,282 - INFO - Epoch: 1
+2024-11-30 22:53:25,977 - INFO - val loss: 0.0034
+2024-11-30 22:53:25,977 - INFO - Epoch: 2
+2024-11-30 22:53:29,860 - INFO - val loss: 0.0034
+2024-11-30 22:53:29,861 - INFO - Epoch: 3
+2024-11-30 22:53:34,424 - INFO - val loss: 0.0034
+2024-11-30 22:53:34,425 - INFO - Epoch: 4
+2024-11-30 22:53:40,462 - INFO - val loss: 0.0034
+2024-11-30 22:53:40,462 - INFO - Epoch: 5
+2024-11-30 22:53:46,017 - INFO - val loss: 0.0035
+2024-11-30 22:53:46,017 - INFO - Epoch: 6
+2024-11-30 22:53:50,013 - INFO - val loss: 0.0035
+2024-11-30 22:53:50,013 - INFO - Epoch: 7
+2024-11-30 22:53:54,351 - INFO - val loss: 0.0035
+2024-11-30 22:53:54,351 - INFO - Epoch: 8
+2024-11-30 22:53:58,260 - INFO - val loss: 0.0035
+2024-11-30 22:53:58,260 - INFO - Epoch: 9
+2024-11-30 22:54:02,874 - INFO - val loss: 0.0035
+2024-11-30 22:54:02,874 - INFO - Epoch: 10
+2024-11-30 22:54:06,984 - INFO - val loss: 0.0035
+2024-11-30 22:54:06,984 - INFO - Epoch: 11
+2024-11-30 22:54:11,193 - INFO - val loss: 0.0035
+2024-11-30 22:54:11,193 - INFO - Epoch: 12
+2024-11-30 22:54:16,943 - INFO - val loss: 0.0035
+2024-11-30 22:54:16,943 - INFO - Early stopping triggered.
+2024-11-30 22:54:16,948 - INFO - best model loss: 0.0034, best model epoch: 2
+2024-11-30 22:54:24,571 - INFO - Window 10, Rank IC insample mean: 0.0729, Rank IC insample std: 0.0743
+2024-11-30 22:54:24,572 - INFO - Window 10, Rank IC outsample mean: 0.0470, Rank IC outsample std: 0.0472
+2024-11-30 22:54:25,795 - INFO - Rolling Window 11: Training from 2015-01-01 to 2016-12-30, Predicting 2017-01-01 to 2017-06-30
+2024-11-30 22:54:55,061 - INFO - X_train shape: torch.Size([215244, 5, 123])
+2024-11-30 22:54:55,062 - INFO - y_train shape: torch.Size([215244, 1])
+2024-11-30 22:54:58,057 - INFO - X_val shape: torch.Size([46896, 5, 123])
+2024-11-30 22:54:58,057 - INFO - y_val shape: torch.Size([46896, 1])
+2024-11-30 22:54:58,057 - INFO - X_insample shape: torch.Size([262140, 5, 123])
+2024-11-30 22:54:58,057 - INFO - y_insample shape: torch.Size([262140, 1])
+2024-11-30 22:54:58,057 - INFO - y_insample_index shape: 262140
+2024-11-30 22:55:00,379 - INFO - X_test shape: torch.Size([65898, 5, 123])
+2024-11-30 22:55:00,379 - INFO - y_target shape: torch.Size([65898, 1])
+2024-11-30 22:55:00,379 - INFO - y_index shape: 65898
+2024-11-30 22:55:00,425 - INFO - 开始超参调优：
+2024-11-30 22:57:44,419 - INFO - Model configuration: {'hidden_size': 288, 'learning_rate': 0.01, 'batch_size': 1024, 'dropout_rate': 0.1}
+2024-11-30 22:57:44,548 - INFO - Epoch: 0
+2024-11-30 22:57:56,371 - INFO - val loss: 0.0020
+2024-11-30 22:57:56,372 - INFO - Epoch: 1
+2024-11-30 22:58:08,469 - INFO - val loss: 0.0022
+2024-11-30 22:58:08,469 - INFO - Epoch: 2
+2024-11-30 22:58:19,836 - INFO - val loss: 0.0024
+2024-11-30 22:58:19,836 - INFO - Epoch: 3
+2024-11-30 22:58:31,037 - INFO - val loss: 0.0024
+2024-11-30 22:58:31,037 - INFO - Epoch: 4
+2024-11-30 22:58:41,725 - INFO - val loss: 0.0026
+2024-11-30 22:58:41,725 - INFO - Epoch: 5
+2024-11-30 22:58:54,643 - INFO - val loss: 0.0028
+2024-11-30 22:58:54,643 - INFO - Epoch: 6
+2024-11-30 22:59:06,162 - INFO - val loss: 0.0028
+2024-11-30 22:59:06,162 - INFO - Epoch: 7
+2024-11-30 22:59:17,564 - INFO - val loss: 0.0032
+2024-11-30 22:59:17,565 - INFO - Epoch: 8
+2024-11-30 22:59:29,261 - INFO - val loss: 0.0030
+2024-11-30 22:59:29,261 - INFO - Epoch: 9
+2024-11-30 22:59:41,233 - INFO - val loss: 0.0029
+2024-11-30 22:59:41,233 - INFO - Epoch: 10
+2024-11-30 22:59:53,647 - INFO - val loss: 0.0029
+2024-11-30 22:59:53,647 - INFO - Early stopping triggered.
+2024-11-30 22:59:53,655 - INFO - best model loss: 0.0020, best model epoch: 0
+2024-11-30 23:00:08,033 - INFO - Window 11, Rank IC insample mean: 0.1902, Rank IC insample std: 0.3031
+2024-11-30 23:00:08,033 - INFO - Window 11, Rank IC outsample mean: 0.0629, Rank IC outsample std: 0.0060
+2024-11-30 23:00:09,315 - INFO - Rolling Window 12: Training from 2015-07-01 to 2017-06-30, Predicting 2017-07-01 to 2017-12-30
+2024-11-30 23:00:38,011 - INFO - X_train shape: torch.Size([222229, 5, 123])
+2024-11-30 23:00:38,011 - INFO - y_train shape: torch.Size([222229, 1])
+2024-11-30 23:00:40,758 - INFO - X_val shape: torch.Size([50597, 5, 123])
+2024-11-30 23:00:40,759 - INFO - y_val shape: torch.Size([50597, 1])
+2024-11-30 23:00:40,759 - INFO - X_insample shape: torch.Size([272826, 5, 123])
+2024-11-30 23:00:40,759 - INFO - y_insample shape: torch.Size([272826, 1])
+2024-11-30 23:00:40,759 - INFO - y_insample_index shape: 272826
+2024-11-30 23:00:43,026 - INFO - X_test shape: torch.Size([67027, 5, 123])
+2024-11-30 23:00:43,027 - INFO - y_target shape: torch.Size([67027, 1])
+2024-11-30 23:00:43,027 - INFO - y_index shape: 67027
+2024-11-30 23:00:43,097 - INFO - 开始超参调优：
+2024-11-30 23:03:36,716 - INFO - Model configuration: {'hidden_size': 288, 'learning_rate': 0.03, 'batch_size': 1024, 'dropout_rate': 0.2}
+2024-11-30 23:03:36,846 - INFO - Epoch: 0
+2024-11-30 23:03:48,566 - INFO - val loss: 0.0027
+2024-11-30 23:03:48,566 - INFO - Epoch: 1
+2024-11-30 23:04:00,333 - INFO - val loss: 0.0027
+2024-11-30 23:04:00,333 - INFO - Epoch: 2
+2024-11-30 23:04:12,299 - INFO - val loss: 0.0027
+2024-11-30 23:04:12,299 - INFO - Epoch: 3
+2024-11-30 23:04:24,638 - INFO - val loss: 0.0027
+2024-11-30 23:04:24,639 - INFO - Epoch: 4
+2024-11-30 23:04:38,019 - INFO - val loss: 0.0027
+2024-11-30 23:04:38,019 - INFO - Epoch: 5
+2024-11-30 23:04:50,688 - INFO - val loss: 0.0027
+2024-11-30 23:04:50,688 - INFO - Epoch: 6
+2024-11-30 23:05:03,453 - INFO - val loss: 0.0027
+2024-11-30 23:05:03,453 - INFO - Epoch: 7
+2024-11-30 23:05:16,246 - INFO - val loss: 0.0027
+2024-11-30 23:05:16,247 - INFO - Epoch: 8
+2024-11-30 23:05:28,301 - INFO - val loss: 0.0027
+2024-11-30 23:05:28,301 - INFO - Epoch: 9
+2024-11-30 23:05:40,819 - INFO - val loss: 0.0027
+2024-11-30 23:05:40,820 - INFO - Epoch: 10
+2024-11-30 23:05:52,882 - INFO - val loss: 0.0028
+2024-11-30 23:05:52,882 - INFO - Epoch: 11
+2024-11-30 23:06:06,526 - INFO - val loss: 0.0027
+2024-11-30 23:06:06,526 - INFO - Epoch: 12
+2024-11-30 23:06:18,765 - INFO - val loss: 0.0028
+2024-11-30 23:06:18,765 - INFO - Epoch: 13
+2024-11-30 23:06:30,971 - INFO - val loss: 0.0028
+2024-11-30 23:06:30,972 - INFO - Epoch: 14
+2024-11-30 23:06:43,181 - INFO - val loss: 0.0028
+2024-11-30 23:06:43,181 - INFO - Epoch: 15
+2024-11-30 23:06:55,568 - INFO - val loss: 0.0029
+2024-11-30 23:06:55,568 - INFO - Early stopping triggered.
+2024-11-30 23:06:55,577 - INFO - best model loss: 0.0027, best model epoch: 5
+2024-11-30 23:07:09,811 - INFO - Window 12, Rank IC insample mean: 0.0930, Rank IC insample std: 0.1248
+2024-11-30 23:07:09,811 - INFO - Window 12, Rank IC outsample mean: 0.0558, Rank IC outsample std: 0.0290
+2024-11-30 23:07:11,100 - INFO - Rolling Window 13: Training from 2016-01-01 to 2017-12-30, Predicting 2018-01-01 to 2018-06-30
+2024-11-30 23:07:42,412 - INFO - X_train shape: torch.Size([232091, 5, 123])
+2024-11-30 23:07:42,412 - INFO - y_train shape: torch.Size([232091, 1])
+2024-11-30 23:07:45,340 - INFO - X_val shape: torch.Size([53997, 5, 123])
+2024-11-30 23:07:45,340 - INFO - y_val shape: torch.Size([53997, 1])
+2024-11-30 23:07:45,340 - INFO - X_insample shape: torch.Size([286088, 5, 123])
+2024-11-30 23:07:45,340 - INFO - y_insample shape: torch.Size([286088, 1])
+2024-11-30 23:07:45,340 - INFO - y_insample_index shape: 286088
+2024-11-30 23:07:47,699 - INFO - X_test shape: torch.Size([73416, 5, 123])
+2024-11-30 23:07:47,699 - INFO - y_target shape: torch.Size([73416, 1])
+2024-11-30 23:07:47,699 - INFO - y_index shape: 73416
+2024-11-30 23:07:47,742 - INFO - 开始超参调优：
+2024-11-30 23:10:03,622 - INFO - Model configuration: {'hidden_size': 32, 'learning_rate': 0.005, 'batch_size': 2048, 'dropout_rate': 0.1}
+2024-11-30 23:10:03,747 - INFO - Epoch: 0
+2024-11-30 23:10:08,059 - INFO - val loss: 0.0022
+2024-11-30 23:10:08,060 - INFO - Epoch: 1
+2024-11-30 23:10:12,358 - INFO - val loss: 0.0022
+2024-11-30 23:10:12,358 - INFO - Epoch: 2
+2024-11-30 23:10:16,542 - INFO - val loss: 0.0022
+2024-11-30 23:10:16,542 - INFO - Epoch: 3
+2024-11-30 23:10:21,510 - INFO - val loss: 0.0023
+2024-11-30 23:10:21,510 - INFO - Epoch: 4
+2024-11-30 23:10:25,835 - INFO - val loss: 0.0023
+2024-11-30 23:10:25,835 - INFO - Epoch: 5
+2024-11-30 23:10:30,115 - INFO - val loss: 0.0023
+2024-11-30 23:10:30,115 - INFO - Epoch: 6
+2024-11-30 23:10:34,720 - INFO - val loss: 0.0023
+2024-11-30 23:10:34,721 - INFO - Epoch: 7
+2024-11-30 23:10:39,141 - INFO - val loss: 0.0023
+2024-11-30 23:10:39,141 - INFO - Epoch: 8
+2024-11-30 23:10:43,379 - INFO - val loss: 0.0023
+2024-11-30 23:10:43,379 - INFO - Epoch: 9
+2024-11-30 23:10:47,661 - INFO - val loss: 0.0024
+2024-11-30 23:10:47,661 - INFO - Epoch: 10
+2024-11-30 23:10:51,798 - INFO - val loss: 0.0024
+2024-11-30 23:10:51,798 - INFO - Epoch: 11
+2024-11-30 23:10:56,064 - INFO - val loss: 0.0024
+2024-11-30 23:10:56,064 - INFO - Early stopping triggered.
+2024-11-30 23:10:56,065 - INFO - best model loss: 0.0022, best model epoch: 1
+2024-11-30 23:11:00,800 - INFO - Window 13, Rank IC insample mean: 0.0944, Rank IC insample std: 0.1416
+2024-11-30 23:11:00,800 - INFO - Window 13, Rank IC outsample mean: 0.0485, Rank IC outsample std: 0.0089
+2024-11-30 23:11:02,186 - INFO - Rolling Window 14: Training from 2016-07-01 to 2018-06-30, Predicting 2018-07-01 to 2018-12-30
+2024-11-30 23:11:33,613 - INFO - X_train shape: torch.Size([246184, 5, 123])
+2024-11-30 23:11:33,614 - INFO - y_train shape: torch.Size([246184, 1])
+2024-11-30 23:11:36,847 - INFO - X_val shape: torch.Size([56045, 5, 123])
+2024-11-30 23:11:36,847 - INFO - y_val shape: torch.Size([56045, 1])
+2024-11-30 23:11:36,848 - INFO - X_insample shape: torch.Size([302229, 5, 123])
+2024-11-30 23:11:36,848 - INFO - y_insample shape: torch.Size([302229, 1])
+2024-11-30 23:11:36,848 - INFO - y_insample_index shape: 302229
+2024-11-30 23:11:39,012 - INFO - X_test shape: torch.Size([70853, 5, 123])
+2024-11-30 23:11:39,012 - INFO - y_target shape: torch.Size([70853, 1])
+2024-11-30 23:11:39,012 - INFO - y_index shape: 70853
+2024-11-30 23:11:39,058 - INFO - 开始超参调优：
+2024-11-30 23:14:56,018 - INFO - Model configuration: {'hidden_size': 192, 'learning_rate': 0.01, 'batch_size': 16384, 'dropout_rate': 0.25}
+2024-11-30 23:14:56,149 - INFO - Epoch: 0
+2024-11-30 23:15:03,608 - INFO - val loss: 0.0045
+2024-11-30 23:15:03,612 - INFO - Epoch: 1
+2024-11-30 23:15:10,814 - INFO - val loss: 0.0041
+2024-11-30 23:15:10,815 - INFO - Epoch: 2
+2024-11-30 23:15:18,290 - INFO - val loss: 0.0041
+2024-11-30 23:15:18,291 - INFO - Epoch: 3
+2024-11-30 23:15:25,628 - INFO - val loss: 0.0041
+2024-11-30 23:15:25,634 - INFO - Epoch: 4
+2024-11-30 23:15:32,910 - INFO - val loss: 0.0041
+2024-11-30 23:15:32,911 - INFO - Epoch: 5
+2024-11-30 23:15:39,920 - INFO - val loss: 0.0041
+2024-11-30 23:15:39,921 - INFO - Epoch: 6
+2024-11-30 23:15:46,254 - INFO - val loss: 0.0041
+2024-11-30 23:15:46,259 - INFO - Epoch: 7
+2024-11-30 23:15:53,291 - INFO - val loss: 0.0041
+2024-11-30 23:15:53,293 - INFO - Epoch: 8
+2024-11-30 23:16:00,420 - INFO - val loss: 0.0041
+2024-11-30 23:16:00,420 - INFO - Epoch: 9
+2024-11-30 23:16:07,596 - INFO - val loss: 0.0041
+2024-11-30 23:16:07,597 - INFO - Epoch: 10
+2024-11-30 23:16:14,645 - INFO - val loss: 0.0041
+2024-11-30 23:16:14,651 - INFO - Epoch: 11
+2024-11-30 23:16:21,676 - INFO - val loss: 0.0041
+2024-11-30 23:16:21,677 - INFO - Epoch: 12
+2024-11-30 23:16:29,522 - INFO - val loss: 0.0041
+2024-11-30 23:16:29,522 - INFO - Epoch: 13
+2024-11-30 23:16:36,919 - INFO - val loss: 0.0041
+2024-11-30 23:16:36,919 - INFO - Epoch: 14
+2024-11-30 23:16:44,464 - INFO - val loss: 0.0041
+2024-11-30 23:16:44,464 - INFO - Epoch: 15
+2024-11-30 23:16:51,748 - INFO - val loss: 0.0041
+2024-11-30 23:16:51,750 - INFO - Epoch: 16
+2024-11-30 23:16:59,161 - INFO - val loss: 0.0041
+2024-11-30 23:16:59,161 - INFO - Epoch: 17
+2024-11-30 23:17:05,852 - INFO - val loss: 0.0041
+2024-11-30 23:17:05,852 - INFO - Early stopping triggered.
+2024-11-30 23:17:05,856 - INFO - best model loss: 0.0041, best model epoch: 7
+2024-11-30 23:17:16,087 - INFO - Window 14, Rank IC insample mean: 0.1278, Rank IC insample std: 0.0957
+2024-11-30 23:17:16,087 - INFO - Window 14, Rank IC outsample mean: 0.0947, Rank IC outsample std: 0.0593
+2024-11-30 23:17:17,528 - INFO - Rolling Window 15: Training from 2017-01-01 to 2018-12-30, Predicting 2019-01-01 to 2019-06-30
+2024-11-30 23:17:52,944 - INFO - X_train shape: torch.Size([257895, 5, 123])
+2024-11-30 23:17:52,945 - INFO - y_train shape: torch.Size([257895, 1])
+2024-11-30 23:17:56,636 - INFO - X_val shape: torch.Size([56757, 5, 123])
+2024-11-30 23:17:56,636 - INFO - y_val shape: torch.Size([56757, 1])
+2024-11-30 23:17:56,636 - INFO - X_insample shape: torch.Size([314652, 5, 123])
+2024-11-30 23:17:56,636 - INFO - y_insample shape: torch.Size([314652, 1])
+2024-11-30 23:17:56,636 - INFO - y_insample_index shape: 314652
+2024-11-30 23:17:59,455 - INFO - X_test shape: torch.Size([71867, 5, 123])
+2024-11-30 23:17:59,455 - INFO - y_target shape: torch.Size([71867, 1])
+2024-11-30 23:17:59,455 - INFO - y_index shape: 71867
+2024-11-30 23:17:59,507 - INFO - 开始超参调优：
+2024-11-30 23:20:45,478 - INFO - Model configuration: {'hidden_size': 224, 'learning_rate': 0.01, 'batch_size': 8192, 'dropout_rate': 0.25}
+2024-11-30 23:20:45,622 - INFO - Epoch: 0
+2024-11-30 23:20:54,394 - INFO - val loss: 0.0038
+2024-11-30 23:20:54,394 - INFO - Epoch: 1
+2024-11-30 23:21:03,250 - INFO - val loss: 0.0037
+2024-11-30 23:21:03,250 - INFO - Epoch: 2
+2024-11-30 23:21:11,572 - INFO - val loss: 0.0037
+2024-11-30 23:21:11,572 - INFO - Epoch: 3
+2024-11-30 23:21:20,049 - INFO - val loss: 0.0037
+2024-11-30 23:21:20,049 - INFO - Epoch: 4
+2024-11-30 23:21:29,162 - INFO - val loss: 0.0037
+2024-11-30 23:21:29,162 - INFO - Epoch: 5
+2024-11-30 23:21:38,061 - INFO - val loss: 0.0037
+2024-11-30 23:21:38,062 - INFO - Epoch: 6
+2024-11-30 23:21:46,930 - INFO - val loss: 0.0037
+2024-11-30 23:21:46,930 - INFO - Epoch: 7
+2024-11-30 23:21:54,499 - INFO - val loss: 0.0037
+2024-11-30 23:21:54,499 - INFO - Epoch: 8
+2024-11-30 23:22:02,933 - INFO - val loss: 0.0037
+2024-11-30 23:22:02,933 - INFO - Epoch: 9
+2024-11-30 23:22:11,898 - INFO - val loss: 0.0037
+2024-11-30 23:22:11,898 - INFO - Epoch: 10
+2024-11-30 23:22:20,739 - INFO - val loss: 0.0037
+2024-11-30 23:22:20,739 - INFO - Epoch: 11
+2024-11-30 23:22:28,566 - INFO - val loss: 0.0037
+2024-11-30 23:22:28,566 - INFO - Epoch: 12
+2024-11-30 23:22:36,632 - INFO - val loss: 0.0037
+2024-11-30 23:22:36,632 - INFO - Epoch: 13
+2024-11-30 23:22:44,923 - INFO - val loss: 0.0037
+2024-11-30 23:22:44,923 - INFO - Epoch: 14
+2024-11-30 23:22:54,370 - INFO - val loss: 0.0037
+2024-11-30 23:22:54,370 - INFO - Early stopping triggered.
+2024-11-30 23:22:54,376 - INFO - best model loss: 0.0037, best model epoch: 4
+2024-11-30 23:23:04,882 - INFO - Window 15, Rank IC insample mean: 0.0740, Rank IC insample std: 0.1029
+2024-11-30 23:23:04,882 - INFO - Window 15, Rank IC outsample mean: 0.0931, Rank IC outsample std: 0.0564
+2024-11-30 23:23:06,364 - INFO - Rolling Window 16: Training from 2017-07-01 to 2019-06-30, Predicting 2019-07-01 to 2019-12-30
+2024-11-30 23:23:43,522 - INFO - X_train shape: torch.Size([270977, 5, 123])
+2024-11-30 23:23:43,522 - INFO - y_train shape: torch.Size([270977, 1])
+2024-11-30 23:23:46,893 - INFO - X_val shape: torch.Size([57570, 5, 123])
+2024-11-30 23:23:46,893 - INFO - y_val shape: torch.Size([57570, 1])
+2024-11-30 23:23:46,893 - INFO - X_insample shape: torch.Size([328547, 5, 123])
+2024-11-30 23:23:46,893 - INFO - y_insample shape: torch.Size([328547, 1])
+2024-11-30 23:23:46,893 - INFO - y_insample_index shape: 328547
+2024-11-30 23:23:49,566 - INFO - X_test shape: torch.Size([73551, 5, 123])
+2024-11-30 23:23:49,566 - INFO - y_target shape: torch.Size([73551, 1])
+2024-11-30 23:23:49,566 - INFO - y_index shape: 73551
+2024-11-30 23:23:49,624 - INFO - 开始超参调优：
+2024-11-30 23:26:55,708 - INFO - Model configuration: {'hidden_size': 256, 'learning_rate': 0.01, 'batch_size': 512, 'dropout_rate': 0.15000000000000002}
+2024-11-30 23:26:55,866 - INFO - Epoch: 0
+2024-11-30 23:27:21,537 - INFO - val loss: 0.0045
+2024-11-30 23:27:21,538 - INFO - Epoch: 1
+2024-11-30 23:27:46,376 - INFO - val loss: 0.0046
+2024-11-30 23:27:46,376 - INFO - Epoch: 2
+2024-11-30 23:28:11,502 - INFO - val loss: 0.0046
+2024-11-30 23:28:11,503 - INFO - Epoch: 3
+2024-11-30 23:28:30,060 - INFO - val loss: 0.0046
+2024-11-30 23:28:30,060 - INFO - Epoch: 4
+2024-11-30 23:28:45,261 - INFO - val loss: 0.0046
+2024-11-30 23:28:45,261 - INFO - Epoch: 5
+2024-11-30 23:29:04,265 - INFO - val loss: 0.0046
+2024-11-30 23:29:04,265 - INFO - Epoch: 6
+2024-11-30 23:29:26,040 - INFO - val loss: 0.0046
+2024-11-30 23:29:26,040 - INFO - Epoch: 7
+2024-11-30 23:29:44,685 - INFO - val loss: 0.0047
+2024-11-30 23:29:44,685 - INFO - Epoch: 8
+2024-11-30 23:30:06,697 - INFO - val loss: 0.0046
+2024-11-30 23:30:06,697 - INFO - Epoch: 9
+2024-11-30 23:30:32,533 - INFO - val loss: 0.0046
+2024-11-30 23:30:32,533 - INFO - Epoch: 10
+2024-11-30 23:30:56,092 - INFO - val loss: 0.0046
+2024-11-30 23:30:56,092 - INFO - Early stopping triggered.
+2024-11-30 23:30:56,100 - INFO - best model loss: 0.0045, best model epoch: 0
+2024-11-30 23:31:19,600 - INFO - Window 16, Rank IC insample mean: 0.0757, Rank IC insample std: 0.1307
+2024-11-30 23:31:19,600 - INFO - Window 16, Rank IC outsample mean: 0.0393, Rank IC outsample std: 0.0176
+2024-11-30 23:31:21,135 - INFO - Rolling Window 17: Training from 2018-01-01 to 2019-12-30, Predicting 2020-01-01 to 2020-06-30
+2024-11-30 23:32:02,215 - INFO - X_train shape: torch.Size([273334, 5, 123])
+2024-11-30 23:32:02,215 - INFO - y_train shape: torch.Size([273334, 1])
+2024-11-30 23:32:05,614 - INFO - X_val shape: torch.Size([59068, 5, 123])
+2024-11-30 23:32:05,614 - INFO - y_val shape: torch.Size([59068, 1])
+2024-11-30 23:32:05,614 - INFO - X_insample shape: torch.Size([332402, 5, 123])
+2024-11-30 23:32:05,614 - INFO - y_insample shape: torch.Size([332402, 1])
+2024-11-30 23:32:05,614 - INFO - y_insample_index shape: 332402
+2024-11-30 23:32:08,460 - INFO - X_test shape: torch.Size([79845, 5, 123])
+2024-11-30 23:32:08,460 - INFO - y_target shape: torch.Size([79845, 1])
+2024-11-30 23:32:08,460 - INFO - y_index shape: 79845
+2024-11-30 23:32:08,520 - INFO - 开始超参调优：
+2024-11-30 23:34:52,082 - INFO - Model configuration: {'hidden_size': 96, 'learning_rate': 0.05, 'batch_size': 1024, 'dropout_rate': 0.15000000000000002}
+2024-11-30 23:34:52,238 - INFO - Epoch: 0
+2024-11-30 23:35:06,622 - INFO - val loss: 0.0028
+2024-11-30 23:35:06,622 - INFO - Epoch: 1
+2024-11-30 23:35:16,273 - INFO - val loss: 0.0028
+2024-11-30 23:35:16,273 - INFO - Epoch: 2
+2024-11-30 23:35:23,976 - INFO - val loss: 0.0028
+2024-11-30 23:35:23,976 - INFO - Epoch: 3
+2024-11-30 23:35:32,073 - INFO - val loss: 0.0028
+2024-11-30 23:35:32,073 - INFO - Epoch: 4
+2024-11-30 23:35:41,690 - INFO - val loss: 0.0028
+2024-11-30 23:35:41,690 - INFO - Epoch: 5
+2024-11-30 23:35:54,206 - INFO - val loss: 0.0028
+2024-11-30 23:35:54,206 - INFO - Epoch: 6
+2024-11-30 23:36:02,123 - INFO - val loss: 0.0028
+2024-11-30 23:36:02,124 - INFO - Epoch: 7
+2024-11-30 23:36:09,783 - INFO - val loss: 0.0028
+2024-11-30 23:36:09,784 - INFO - Epoch: 8
+2024-11-30 23:36:19,412 - INFO - val loss: 0.0028
+2024-11-30 23:36:19,412 - INFO - Epoch: 9
+2024-11-30 23:36:27,726 - INFO - val loss: 0.0028
+2024-11-30 23:36:27,726 - INFO - Epoch: 10
+2024-11-30 23:36:36,635 - INFO - val loss: 0.0028
+2024-11-30 23:36:36,635 - INFO - Epoch: 11
+2024-11-30 23:36:44,917 - INFO - val loss: 0.0028
+2024-11-30 23:36:44,917 - INFO - Epoch: 12
+2024-11-30 23:36:54,698 - INFO - val loss: 0.0028
+2024-11-30 23:36:54,698 - INFO - Epoch: 13
+2024-11-30 23:37:02,405 - INFO - val loss: 0.0028
+2024-11-30 23:37:02,405 - INFO - Early stopping triggered.
+2024-11-30 23:37:02,407 - INFO - best model loss: 0.0028, best model epoch: 3
+2024-11-30 23:37:15,916 - INFO - Window 17, Rank IC insample mean: 0.0818, Rank IC insample std: 0.0838
+2024-11-30 23:37:15,916 - INFO - Window 17, Rank IC outsample mean: 0.0543, Rank IC outsample std: 0.0445
+2024-11-30 23:37:17,514 - INFO - Rolling Window 18: Training from 2018-07-01 to 2020-06-30, Predicting 2020-07-01 to 2020-12-30
+2024-11-30 23:37:54,932 - INFO - X_train shape: torch.Size([281786, 5, 123])
+2024-11-30 23:37:54,933 - INFO - y_train shape: torch.Size([281786, 1])
+2024-11-30 23:37:58,834 - INFO - X_val shape: torch.Size([61003, 5, 123])
+2024-11-30 23:37:58,834 - INFO - y_val shape: torch.Size([61003, 1])
+2024-11-30 23:37:58,834 - INFO - X_insample shape: torch.Size([342789, 5, 123])
+2024-11-30 23:37:58,834 - INFO - y_insample shape: torch.Size([342789, 1])
+2024-11-30 23:37:58,834 - INFO - y_insample_index shape: 342789
+2024-11-30 23:38:01,648 - INFO - X_test shape: torch.Size([79731, 5, 123])
+2024-11-30 23:38:01,649 - INFO - y_target shape: torch.Size([79731, 1])
+2024-11-30 23:38:01,649 - INFO - y_index shape: 79731
+2024-11-30 23:38:01,724 - INFO - 开始超参调优：
+2024-11-30 23:42:26,991 - INFO - Model configuration: {'hidden_size': 192, 'learning_rate': 0.0001, 'batch_size': 4096, 'dropout_rate': 0.1}
+2024-11-30 23:42:27,158 - INFO - Epoch: 0
+2024-11-30 23:42:36,389 - INFO - val loss: 0.0043
+2024-11-30 23:42:36,391 - INFO - Epoch: 1
+2024-11-30 23:42:44,867 - INFO - val loss: 0.0042
+2024-11-30 23:42:44,867 - INFO - Epoch: 2
+2024-11-30 23:42:52,823 - INFO - val loss: 0.0042
+2024-11-30 23:42:52,823 - INFO - Epoch: 3
+2024-11-30 23:42:58,598 - INFO - val loss: 0.0042
+2024-11-30 23:42:58,599 - INFO - Epoch: 4
+2024-11-30 23:43:04,269 - INFO - val loss: 0.0042
+2024-11-30 23:43:04,269 - INFO - Epoch: 5
+2024-11-30 23:43:09,723 - INFO - val loss: 0.0042
+2024-11-30 23:43:09,723 - INFO - Epoch: 6
+2024-11-30 23:43:15,268 - INFO - val loss: 0.0042
+2024-11-30 23:43:15,268 - INFO - Epoch: 7
+2024-11-30 23:43:22,589 - INFO - val loss: 0.0043
+2024-11-30 23:43:22,591 - INFO - Epoch: 8
+2024-11-30 23:43:32,837 - INFO - val loss: 0.0043
+2024-11-30 23:43:32,838 - INFO - Epoch: 9
+2024-11-30 23:43:41,784 - INFO - val loss: 0.0043
+2024-11-30 23:43:41,784 - INFO - Epoch: 10
+2024-11-30 23:43:47,358 - INFO - val loss: 0.0043
+2024-11-30 23:43:47,358 - INFO - Epoch: 11
+2024-11-30 23:43:54,057 - INFO - val loss: 0.0043
+2024-11-30 23:43:54,057 - INFO - Epoch: 12
+2024-11-30 23:44:04,130 - INFO - val loss: 0.0043
+2024-11-30 23:44:04,132 - INFO - Early stopping triggered.
+2024-11-30 23:44:04,137 - INFO - best model loss: 0.0042, best model epoch: 2
+2024-11-30 23:44:13,437 - INFO - Window 18, Rank IC insample mean: 0.0535, Rank IC insample std: 0.0887
+2024-11-30 23:44:13,437 - INFO - Window 18, Rank IC outsample mean: 0.0470, Rank IC outsample std: 0.0320
+2024-11-30 23:44:15,086 - INFO - Rolling Window 19: Training from 2019-01-01 to 2020-12-30, Predicting 2021-01-01 to 2021-06-30
+2024-11-30 23:44:55,713 - INFO - X_train shape: torch.Size([285146, 5, 123])
+2024-11-30 23:44:55,714 - INFO - y_train shape: torch.Size([285146, 1])
+2024-11-30 23:44:59,677 - INFO - X_val shape: torch.Size([64324, 5, 123])
+2024-11-30 23:44:59,677 - INFO - y_val shape: torch.Size([64324, 1])
+2024-11-30 23:44:59,677 - INFO - X_insample shape: torch.Size([349470, 5, 123])
+2024-11-30 23:44:59,677 - INFO - y_insample shape: torch.Size([349470, 1])
+2024-11-30 23:44:59,677 - INFO - y_insample_index shape: 349470
+2024-11-30 23:45:02,826 - INFO - X_test shape: torch.Size([88572, 5, 123])
+2024-11-30 23:45:02,826 - INFO - y_target shape: torch.Size([88572, 1])
+2024-11-30 23:45:02,826 - INFO - y_index shape: 88572
+2024-11-30 23:45:02,898 - INFO - 开始超参调优：
+2024-11-30 23:48:16,026 - INFO - Model configuration: {'hidden_size': 64, 'learning_rate': 0.01, 'batch_size': 4096, 'dropout_rate': 0.2}
+2024-11-30 23:48:16,175 - INFO - Epoch: 0
+2024-11-30 23:48:22,231 - INFO - val loss: 0.0041
+2024-11-30 23:48:22,231 - INFO - Epoch: 1
+2024-11-30 23:48:29,302 - INFO - val loss: 0.0041
+2024-11-30 23:48:29,302 - INFO - Epoch: 2
+2024-11-30 23:48:37,962 - INFO - val loss: 0.0042
+2024-11-30 23:48:37,962 - INFO - Epoch: 3
+2024-11-30 23:48:44,429 - INFO - val loss: 0.0042
+2024-11-30 23:48:44,429 - INFO - Epoch: 4
+2024-11-30 23:48:50,530 - INFO - val loss: 0.0042
+2024-11-30 23:48:50,531 - INFO - Epoch: 5
+2024-11-30 23:48:57,431 - INFO - val loss: 0.0043
+2024-11-30 23:48:57,431 - INFO - Epoch: 6
+2024-11-30 23:49:03,042 - INFO - val loss: 0.0043
+2024-11-30 23:49:03,042 - INFO - Epoch: 7
+2024-11-30 23:49:09,751 - INFO - val loss: 0.0044
+2024-11-30 23:49:09,751 - INFO - Epoch: 8
+2024-11-30 23:49:17,001 - INFO - val loss: 0.0045
+2024-11-30 23:49:17,001 - INFO - Epoch: 9
+2024-11-30 23:49:25,112 - INFO - val loss: 0.0045
+2024-11-30 23:49:25,113 - INFO - Epoch: 10
+2024-11-30 23:49:32,080 - INFO - val loss: 0.0045
+2024-11-30 23:49:32,081 - INFO - Early stopping triggered.
+2024-11-30 23:49:32,083 - INFO - best model loss: 0.0041, best model epoch: 0
+2024-11-30 23:49:43,366 - INFO - Window 19, Rank IC insample mean: 0.0869, Rank IC insample std: 0.1423
+2024-11-30 23:49:43,368 - INFO - Window 19, Rank IC outsample mean: 0.0513, Rank IC outsample std: 0.0108
+2024-11-30 23:49:45,126 - INFO - Rolling Window 20: Training from 2019-07-01 to 2021-06-30, Predicting 2021-07-01 to 2021-12-30
+2024-11-30 23:50:25,652 - INFO - X_train shape: torch.Size([299518, 5, 123])
+2024-11-30 23:50:25,652 - INFO - y_train shape: torch.Size([299518, 1])
+2024-11-30 23:50:29,594 - INFO - X_val shape: torch.Size([67802, 5, 123])
+2024-11-30 23:50:29,595 - INFO - y_val shape: torch.Size([67802, 1])
+2024-11-30 23:50:29,595 - INFO - X_insample shape: torch.Size([367320, 5, 123])
+2024-11-30 23:50:29,595 - INFO - y_insample shape: torch.Size([367320, 1])
+2024-11-30 23:50:29,595 - INFO - y_insample_index shape: 367320
+2024-11-30 23:50:32,568 - INFO - X_test shape: torch.Size([89214, 5, 123])
+2024-11-30 23:50:32,568 - INFO - y_target shape: torch.Size([89214, 1])
+2024-11-30 23:50:32,568 - INFO - y_index shape: 89214
+2024-11-30 23:50:32,626 - INFO - 开始超参调优：
+2024-11-30 23:54:36,883 - INFO - Model configuration: {'hidden_size': 192, 'learning_rate': 0.03, 'batch_size': 8192, 'dropout_rate': 0.1}
+2024-11-30 23:54:37,041 - INFO - Epoch: 0
+2024-11-30 23:54:47,564 - INFO - val loss: 0.0043
+2024-11-30 23:54:47,564 - INFO - Epoch: 1
+2024-11-30 23:54:59,063 - INFO - val loss: 0.0040
+2024-11-30 23:54:59,064 - INFO - Epoch: 2
+2024-11-30 23:55:09,182 - INFO - val loss: 0.0040
+2024-11-30 23:55:09,182 - INFO - Epoch: 3
+2024-11-30 23:55:20,182 - INFO - val loss: 0.0040
+2024-11-30 23:55:20,183 - INFO - Epoch: 4
+2024-11-30 23:55:31,271 - INFO - val loss: 0.0040
+2024-11-30 23:55:31,271 - INFO - Epoch: 5
+2024-11-30 23:55:40,668 - INFO - val loss: 0.0040
+2024-11-30 23:55:40,668 - INFO - Epoch: 6
+2024-11-30 23:55:50,156 - INFO - val loss: 0.0040
+2024-11-30 23:55:50,156 - INFO - Epoch: 7
+2024-11-30 23:55:59,497 - INFO - val loss: 0.0040
+2024-11-30 23:55:59,498 - INFO - Epoch: 8
+2024-11-30 23:56:09,475 - INFO - val loss: 0.0040
+2024-11-30 23:56:09,475 - INFO - Epoch: 9
+2024-11-30 23:56:19,900 - INFO - val loss: 0.0040
+2024-11-30 23:56:19,900 - INFO - Epoch: 10
+2024-11-30 23:56:29,586 - INFO - val loss: 0.0039
+2024-11-30 23:56:29,586 - INFO - Epoch: 11
+2024-11-30 23:56:39,951 - INFO - val loss: 0.0039
+2024-11-30 23:56:39,952 - INFO - Epoch: 12
+2024-11-30 23:56:49,139 - INFO - val loss: 0.0039
+2024-11-30 23:56:49,140 - INFO - Epoch: 13
+2024-11-30 23:56:58,668 - INFO - val loss: 0.0039
+2024-11-30 23:56:58,668 - INFO - Epoch: 14
+2024-11-30 23:57:09,823 - INFO - val loss: 0.0039
+2024-11-30 23:57:09,828 - INFO - Epoch: 15
+2024-11-30 23:57:19,988 - INFO - val loss: 0.0039
+2024-11-30 23:57:19,988 - INFO - Epoch: 16
+2024-11-30 23:57:30,449 - INFO - val loss: 0.0039
+2024-11-30 23:57:30,450 - INFO - Epoch: 17
+2024-11-30 23:57:39,290 - INFO - val loss: 0.0039
+2024-11-30 23:57:39,290 - INFO - Epoch: 18
+2024-11-30 23:57:49,245 - INFO - val loss: 0.0039
+2024-11-30 23:57:49,245 - INFO - Epoch: 19
+2024-11-30 23:57:59,041 - INFO - val loss: 0.0039
+2024-11-30 23:57:59,041 - INFO - Epoch: 20
+2024-11-30 23:58:09,279 - INFO - val loss: 0.0039
+2024-11-30 23:58:09,280 - INFO - Epoch: 21
+2024-11-30 23:58:18,822 - INFO - val loss: 0.0039
+2024-11-30 23:58:18,823 - INFO - Epoch: 22
+2024-11-30 23:58:28,958 - INFO - val loss: 0.0040
+2024-11-30 23:58:28,958 - INFO - Epoch: 23
+2024-11-30 23:58:38,345 - INFO - val loss: 0.0040
+2024-11-30 23:58:38,347 - INFO - Epoch: 24
+2024-11-30 23:58:47,983 - INFO - val loss: 0.0040
+2024-11-30 23:58:47,984 - INFO - Epoch: 25
+2024-11-30 23:58:58,978 - INFO - val loss: 0.0040
+2024-11-30 23:58:58,978 - INFO - Epoch: 26
+2024-11-30 23:59:07,297 - INFO - val loss: 0.0040
+2024-11-30 23:59:07,297 - INFO - Epoch: 27
+2024-11-30 23:59:17,434 - INFO - val loss: 0.0040
+2024-11-30 23:59:17,435 - INFO - Epoch: 28
+2024-11-30 23:59:27,087 - INFO - val loss: 0.0040
+2024-11-30 23:59:27,087 - INFO - Epoch: 29
+2024-11-30 23:59:36,826 - INFO - val loss: 0.0040
+2024-11-30 23:59:36,827 - INFO - Early stopping triggered.
+2024-11-30 23:59:36,835 - INFO - best model loss: 0.0039, best model epoch: 19
+2024-11-30 23:59:52,589 - INFO - Window 20, Rank IC insample mean: 0.0598, Rank IC insample std: 0.0771
+2024-11-30 23:59:52,590 - INFO - Window 20, Rank IC outsample mean: 0.0516, Rank IC outsample std: -0.0178
+2024-11-30 23:59:54,370 - INFO - Rolling Window 21: Training from 2020-01-01 to 2021-12-30, Predicting 2022-01-01 to 2022-06-30
+2024-12-01 00:00:35,658 - INFO - X_train shape: torch.Size([313783, 5, 123])
+2024-12-01 00:00:35,659 - INFO - y_train shape: torch.Size([313783, 1])
+2024-12-01 00:00:39,679 - INFO - X_val shape: torch.Size([71797, 5, 123])
+2024-12-01 00:00:39,679 - INFO - y_val shape: torch.Size([71797, 1])
+2024-12-01 00:00:39,679 - INFO - X_insample shape: torch.Size([385580, 5, 123])
+2024-12-01 00:00:39,679 - INFO - y_insample shape: torch.Size([385580, 1])
+2024-12-01 00:00:39,679 - INFO - y_insample_index shape: 385580
+2024-12-01 00:00:42,843 - INFO - X_test shape: torch.Size([97869, 5, 123])
+2024-12-01 00:00:42,843 - INFO - y_target shape: torch.Size([97869, 1])
+2024-12-01 00:00:42,843 - INFO - y_index shape: 97869
+2024-12-01 00:00:42,900 - INFO - 开始超参调优：
+2024-12-01 00:05:22,648 - INFO - Model configuration: {'hidden_size': 64, 'learning_rate': 0.05, 'batch_size': 1024, 'dropout_rate': 0.2}
+2024-12-01 00:05:22,796 - INFO - Epoch: 0
+2024-12-01 00:05:33,355 - INFO - val loss: 0.0041
+2024-12-01 00:05:33,355 - INFO - Epoch: 1
+2024-12-01 00:05:44,153 - INFO - val loss: 0.0041
+2024-12-01 00:05:44,153 - INFO - Epoch: 2
+2024-12-01 00:05:55,168 - INFO - val loss: 0.0041
+2024-12-01 00:05:55,169 - INFO - Epoch: 3
+2024-12-01 00:06:06,130 - INFO - val loss: 0.0041
+2024-12-01 00:06:06,131 - INFO - Epoch: 4
+2024-12-01 00:06:17,063 - INFO - val loss: 0.0041
+2024-12-01 00:06:17,063 - INFO - Epoch: 5
+2024-12-01 00:06:27,795 - INFO - val loss: 0.0041
+2024-12-01 00:06:27,796 - INFO - Epoch: 6
+2024-12-01 00:06:38,319 - INFO - val loss: 0.0041
+2024-12-01 00:06:38,319 - INFO - Epoch: 7
+2024-12-01 00:06:48,830 - INFO - val loss: 0.0041
+2024-12-01 00:06:48,830 - INFO - Epoch: 8
+2024-12-01 00:06:59,527 - INFO - val loss: 0.0041
+2024-12-01 00:06:59,527 - INFO - Epoch: 9
+2024-12-01 00:07:09,779 - INFO - val loss: 0.0041
+2024-12-01 00:07:09,780 - INFO - Epoch: 10
+2024-12-01 00:07:20,070 - INFO - val loss: 0.0042
+2024-12-01 00:07:20,070 - INFO - Epoch: 11
+2024-12-01 00:07:31,452 - INFO - val loss: 0.0042
+2024-12-01 00:07:31,452 - INFO - Epoch: 12
+2024-12-01 00:07:41,543 - INFO - val loss: 0.0042
+2024-12-01 00:07:41,543 - INFO - Epoch: 13
+2024-12-01 00:07:51,366 - INFO - val loss: 0.0042
+2024-12-01 00:07:51,367 - INFO - Epoch: 14
+2024-12-01 00:08:01,643 - INFO - val loss: 0.0042
+2024-12-01 00:08:01,643 - INFO - Epoch: 15
+2024-12-01 00:08:12,392 - INFO - val loss: 0.0042
+2024-12-01 00:08:12,393 - INFO - Epoch: 16
+2024-12-01 00:08:23,925 - INFO - val loss: 0.0042
+2024-12-01 00:08:23,925 - INFO - Epoch: 17
+2024-12-01 00:08:34,349 - INFO - val loss: 0.0042
+2024-12-01 00:08:34,349 - INFO - Early stopping triggered.
+2024-12-01 00:08:34,351 - INFO - best model loss: 0.0041, best model epoch: 7
+2024-12-01 00:08:41,432 - INFO - Window 21, Rank IC insample mean: 0.0603, Rank IC insample std: 0.0779
+2024-12-01 00:08:41,432 - INFO - Window 21, Rank IC outsample mean: 0.0459, Rank IC outsample std: 0.0442
+2024-12-01 00:08:43,274 - INFO - Rolling Window 22: Training from 2020-07-01 to 2022-06-30, Predicting 2022-07-01 to 2022-12-30
+2024-12-01 00:09:25,479 - INFO - X_train shape: torch.Size([331261, 5, 123])
+2024-12-01 00:09:25,480 - INFO - y_train shape: torch.Size([331261, 1])
+2024-12-01 00:09:29,464 - INFO - X_val shape: torch.Size([74796, 5, 123])
+2024-12-01 00:09:29,464 - INFO - y_val shape: torch.Size([74796, 1])
+2024-12-01 00:09:29,464 - INFO - X_insample shape: torch.Size([406057, 5, 123])
+2024-12-01 00:09:29,464 - INFO - y_insample shape: torch.Size([406057, 1])
+2024-12-01 00:09:29,464 - INFO - y_insample_index shape: 406057
+2024-12-01 00:09:32,649 - INFO - X_test shape: torch.Size([95819, 5, 123])
+2024-12-01 00:09:32,649 - INFO - y_target shape: torch.Size([95819, 1])
+2024-12-01 00:09:32,649 - INFO - y_index shape: 95819
+2024-12-01 00:09:32,709 - INFO - 开始超参调优：
+2024-12-01 00:13:46,098 - INFO - Model configuration: {'hidden_size': 128, 'learning_rate': 0.03, 'batch_size': 2048, 'dropout_rate': 0.15000000000000002}
+2024-12-01 00:13:46,264 - INFO - Epoch: 0
+2024-12-01 00:13:56,009 - INFO - val loss: 0.0052
+2024-12-01 00:13:56,009 - INFO - Epoch: 1
+2024-12-01 00:14:04,130 - INFO - val loss: 0.0052
+2024-12-01 00:14:04,130 - INFO - Epoch: 2
+2024-12-01 00:14:13,063 - INFO - val loss: 0.0052
+2024-12-01 00:14:13,063 - INFO - Epoch: 3
+2024-12-01 00:14:21,809 - INFO - val loss: 0.0052
+2024-12-01 00:14:21,809 - INFO - Epoch: 4
+2024-12-01 00:14:32,918 - INFO - val loss: 0.0052
+2024-12-01 00:14:32,919 - INFO - Epoch: 5
+2024-12-01 00:14:41,855 - INFO - val loss: 0.0052
+2024-12-01 00:14:41,855 - INFO - Epoch: 6
+2024-12-01 00:14:50,737 - INFO - val loss: 0.0052
+2024-12-01 00:14:50,737 - INFO - Epoch: 7
+2024-12-01 00:15:05,515 - INFO - val loss: 0.0052
+2024-12-01 00:15:05,515 - INFO - Epoch: 8
+2024-12-01 00:15:13,419 - INFO - val loss: 0.0052
+2024-12-01 00:15:13,419 - INFO - Epoch: 9
+2024-12-01 00:15:22,760 - INFO - val loss: 0.0052
+2024-12-01 00:15:22,760 - INFO - Epoch: 10
+2024-12-01 00:15:33,804 - INFO - val loss: 0.0052
+2024-12-01 00:15:33,804 - INFO - Epoch: 11
+2024-12-01 00:15:41,785 - INFO - val loss: 0.0052
+2024-12-01 00:15:41,785 - INFO - Early stopping triggered.
+2024-12-01 00:15:41,790 - INFO - best model loss: 0.0052, best model epoch: 1
+2024-12-01 00:15:52,274 - INFO - Window 22, Rank IC insample mean: 0.0842, Rank IC insample std: 0.1050
+2024-12-01 00:15:52,274 - INFO - Window 22, Rank IC outsample mean: 0.0700, Rank IC outsample std: 0.0688
+2024-12-01 00:15:54,171 - INFO - Rolling Window 23: Training from 2021-01-01 to 2022-12-30, Predicting 2023-01-01 to 2023-06-30
+2024-12-01 00:16:40,358 - INFO - X_train shape: torch.Size([348287, 5, 123])
+2024-12-01 00:16:40,358 - INFO - y_train shape: torch.Size([348287, 1])
+2024-12-01 00:16:45,236 - INFO - X_val shape: torch.Size([77053, 5, 123])
+2024-12-01 00:16:45,236 - INFO - y_val shape: torch.Size([77053, 1])
+2024-12-01 00:16:45,236 - INFO - X_insample shape: torch.Size([425340, 5, 123])
+2024-12-01 00:16:45,237 - INFO - y_insample shape: torch.Size([425340, 1])
+2024-12-01 00:16:45,237 - INFO - y_insample_index shape: 425340
+2024-12-01 00:16:48,862 - INFO - X_test shape: torch.Size([103781, 5, 123])
+2024-12-01 00:16:48,862 - INFO - y_target shape: torch.Size([103781, 1])
+2024-12-01 00:16:48,862 - INFO - y_index shape: 103781
+2024-12-01 00:16:48,932 - INFO - 开始超参调优：
+2024-12-01 00:21:41,956 - INFO - Model configuration: {'hidden_size': 320, 'learning_rate': 0.03, 'batch_size': 4096, 'dropout_rate': 0.1}
+2024-12-01 00:21:42,152 - INFO - Epoch: 0
+2024-12-01 00:21:54,019 - INFO - val loss: 0.0043
+2024-12-01 00:21:54,019 - INFO - Epoch: 1
+2024-12-01 00:22:05,482 - INFO - val loss: 0.0040
+2024-12-01 00:22:05,482 - INFO - Epoch: 2
+2024-12-01 00:22:17,171 - INFO - val loss: 0.0041
+2024-12-01 00:22:17,171 - INFO - Epoch: 3
+2024-12-01 00:22:27,833 - INFO - val loss: 0.0041
+2024-12-01 00:22:27,833 - INFO - Epoch: 4
+2024-12-01 00:22:36,051 - INFO - val loss: 0.0041
+2024-12-01 00:22:36,051 - INFO - Epoch: 5
+2024-12-01 00:22:45,872 - INFO - val loss: 0.0041
+2024-12-01 00:22:45,872 - INFO - Epoch: 6
+2024-12-01 00:22:53,585 - INFO - val loss: 0.0040
+2024-12-01 00:22:53,585 - INFO - Epoch: 7
+2024-12-01 00:23:00,490 - INFO - val loss: 0.0040
+2024-12-01 00:23:00,491 - INFO - Epoch: 8
+2024-12-01 00:23:07,294 - INFO - val loss: 0.0040
+2024-12-01 00:23:07,294 - INFO - Epoch: 9
+2024-12-01 00:23:13,940 - INFO - val loss: 0.0040
+2024-12-01 00:23:13,940 - INFO - Epoch: 10
+2024-12-01 00:23:20,782 - INFO - val loss: 0.0040
+2024-12-01 00:23:20,783 - INFO - Epoch: 11
+2024-12-01 00:23:27,360 - INFO - val loss: 0.0040
+2024-12-01 00:23:27,360 - INFO - Epoch: 12
+2024-12-01 00:23:35,647 - INFO - val loss: 0.0040
+2024-12-01 00:23:35,647 - INFO - Epoch: 13
+2024-12-01 00:23:46,157 - INFO - val loss: 0.0042
+2024-12-01 00:23:46,157 - INFO - Epoch: 14
+2024-12-01 00:23:56,063 - INFO - val loss: 0.0042
+2024-12-01 00:23:56,063 - INFO - Epoch: 15
+2024-12-01 00:24:05,492 - INFO - val loss: 0.0043
+2024-12-01 00:24:05,492 - INFO - Epoch: 16
+2024-12-01 00:24:12,457 - INFO - val loss: 0.0042
+2024-12-01 00:24:12,457 - INFO - Early stopping triggered.
+2024-12-01 00:24:12,469 - INFO - best model loss: 0.0040, best model epoch: 6
+2024-12-01 00:24:21,152 - INFO - Window 23, Rank IC insample mean: 0.0485, Rank IC insample std: 0.0533
+2024-12-01 00:24:21,153 - INFO - Window 23, Rank IC outsample mean: 0.0628, Rank IC outsample std: 0.0044
+2024-12-01 00:46:32,487 - INFO - Rolling Window 24: Training from 2021-07-01 to 2023-06-30, Predicting 2023-07-01 to 2023-12-30
+2024-12-01 00:47:28,042 - INFO - X_train shape: torch.Size([363124, 5, 123])
+2024-12-01 00:47:28,042 - INFO - y_train shape: torch.Size([363124, 1])
+2024-12-01 00:47:33,196 - INFO - X_val shape: torch.Size([79245, 5, 123])
+2024-12-01 00:47:33,196 - INFO - y_val shape: torch.Size([79245, 1])
+2024-12-01 00:47:33,196 - INFO - X_insample shape: torch.Size([442369, 5, 123])
+2024-12-01 00:47:33,196 - INFO - y_insample shape: torch.Size([442369, 1])
+2024-12-01 00:47:33,196 - INFO - y_insample_index shape: 442369
+2024-12-01 00:47:37,176 - INFO - X_test shape: torch.Size([101795, 5, 123])
+2024-12-01 00:47:37,176 - INFO - y_target shape: torch.Size([101795, 1])
+2024-12-01 00:47:37,176 - INFO - y_index shape: 101795
+2024-12-01 00:47:37,242 - INFO - 开始超参调优：
+2024-12-01 00:51:46,616 - INFO - Model configuration: {'hidden_size': 96, 'learning_rate': 0.01, 'batch_size': 16384, 'dropout_rate': 0.25}
+2024-12-01 00:51:46,622 - INFO - Epoch: 0
+2024-12-01 00:51:57,565 - INFO - val loss: 0.0036
+2024-12-01 00:51:57,565 - INFO - Epoch: 1
+2024-12-01 00:52:06,895 - INFO - val loss: 0.0035
+2024-12-01 00:52:06,895 - INFO - Epoch: 2
+2024-12-01 00:52:16,748 - INFO - val loss: 0.0035
+2024-12-01 00:52:16,748 - INFO - Epoch: 3
+2024-12-01 00:52:26,772 - INFO - val loss: 0.0035
+2024-12-01 00:52:26,772 - INFO - Epoch: 4
+2024-12-01 00:52:36,422 - INFO - val loss: 0.0035
+2024-12-01 00:52:36,422 - INFO - Epoch: 5
+2024-12-01 00:52:46,224 - INFO - val loss: 0.0035
+2024-12-01 00:52:46,224 - INFO - Epoch: 6
+2024-12-01 00:52:56,060 - INFO - val loss: 0.0035
+2024-12-01 00:52:56,060 - INFO - Epoch: 7
+2024-12-01 00:53:05,540 - INFO - val loss: 0.0035
+2024-12-01 00:53:05,540 - INFO - Epoch: 8
+2024-12-01 00:53:14,566 - INFO - val loss: 0.0035
+2024-12-01 00:53:14,567 - INFO - Epoch: 9
+2024-12-01 00:53:23,983 - INFO - val loss: 0.0035
+2024-12-01 00:53:23,983 - INFO - Epoch: 10
+2024-12-01 00:53:33,198 - INFO - val loss: 0.0035
+2024-12-01 00:53:33,198 - INFO - Epoch: 11
+2024-12-01 00:53:42,254 - INFO - val loss: 0.0035
+2024-12-01 00:53:42,254 - INFO - Epoch: 12
+2024-12-01 00:53:51,948 - INFO - val loss: 0.0035
+2024-12-01 00:53:51,948 - INFO - Epoch: 13
+2024-12-01 00:54:00,443 - INFO - val loss: 0.0035
+2024-12-01 00:54:00,443 - INFO - Early stopping triggered.
+2024-12-01 00:54:00,445 - INFO - best model loss: 0.0035, best model epoch: 3
+2024-12-01 00:54:13,923 - INFO - Window 24, Rank IC insample mean: 0.0825, Rank IC insample std: 0.1021
+2024-12-01 00:54:13,923 - INFO - Window 24, Rank IC outsample mean: 0.0620, Rank IC outsample std: 0.0399
+2024-12-01 00:54:15,938 - INFO - Rolling Window 25: Training from 2022-01-01 to 2023-12-30, Predicting 2024-01-01 to 2024-06-30
+2024-12-01 00:55:03,015 - INFO - X_train shape: torch.Size([370742, 5, 123])
+2024-12-01 00:55:03,017 - INFO - y_train shape: torch.Size([370742, 1])
+2024-12-01 00:55:07,942 - INFO - X_val shape: torch.Size([81661, 5, 123])
+2024-12-01 00:55:07,942 - INFO - y_val shape: torch.Size([81661, 1])
+2024-12-01 00:55:07,942 - INFO - X_insample shape: torch.Size([452403, 5, 123])
+2024-12-01 00:55:07,942 - INFO - y_insample shape: torch.Size([452403, 1])
+2024-12-01 00:55:07,942 - INFO - y_insample_index shape: 452403
+2024-12-01 00:55:11,477 - INFO - X_test shape: torch.Size([108311, 5, 123])
+2024-12-01 00:55:11,477 - INFO - y_target shape: torch.Size([108311, 1])
+2024-12-01 00:55:11,477 - INFO - y_index shape: 108311
+2024-12-01 00:55:11,550 - INFO - 开始超参调优：
+2024-12-01 00:59:25,434 - INFO - Model configuration: {'hidden_size': 320, 'learning_rate': 0.0001, 'batch_size': 2048, 'dropout_rate': 0.1}
+2024-12-01 00:59:25,654 - INFO - Epoch: 0
+2024-12-01 00:59:37,214 - INFO - val loss: 0.0027
+2024-12-01 00:59:37,214 - INFO - Epoch: 1
+2024-12-01 00:59:49,780 - INFO - val loss: 0.0027
+2024-12-01 00:59:49,780 - INFO - Epoch: 2
+2024-12-01 01:00:04,704 - INFO - val loss: 0.0027
+2024-12-01 01:00:04,705 - INFO - Epoch: 3
+2024-12-01 01:00:19,743 - INFO - val loss: 0.0027
+2024-12-01 01:00:19,743 - INFO - Epoch: 4
+2024-12-01 01:00:34,426 - INFO - val loss: 0.0027
+2024-12-01 01:00:34,426 - INFO - Epoch: 5
+2024-12-01 01:00:47,320 - INFO - val loss: 0.0027
+2024-12-01 01:00:47,320 - INFO - Epoch: 6
+2024-12-01 01:01:00,240 - INFO - val loss: 0.0027
+2024-12-01 01:01:00,241 - INFO - Epoch: 7
+2024-12-01 01:01:14,743 - INFO - val loss: 0.0027
+2024-12-01 01:01:14,744 - INFO - Epoch: 8
+2024-12-01 01:01:26,405 - INFO - val loss: 0.0027
+2024-12-01 01:01:26,405 - INFO - Epoch: 9
+2024-12-01 01:01:40,376 - INFO - val loss: 0.0027
+2024-12-01 01:01:40,376 - INFO - Epoch: 10
+2024-12-01 01:01:53,027 - INFO - val loss: 0.0027
+2024-12-01 01:01:53,027 - INFO - Early stopping triggered.
+2024-12-01 01:01:53,037 - INFO - best model loss: 0.0027, best model epoch: 0
+2024-12-01 01:02:09,128 - INFO - Window 25, Rank IC insample mean: 0.0720, Rank IC insample std: 0.1167
+2024-12-01 01:02:09,128 - INFO - Window 25, Rank IC outsample mean: 0.1220, Rank IC outsample std: 0.0580
+2024-12-01 01:02:11,197 - INFO - Rolling Window 26: Training from 2022-07-01 to 2024-06-30, Predicting 2024-07-01 to 2024-12-30
+2024-12-01 01:02:57,957 - INFO - X_train shape: torch.Size([386541, 5, 123])
+2024-12-01 01:02:57,958 - INFO - y_train shape: torch.Size([386541, 1])
+2024-12-01 01:03:03,562 - INFO - X_val shape: torch.Size([82585, 5, 123])
+2024-12-01 01:03:03,562 - INFO - y_val shape: torch.Size([82585, 1])
+2024-12-01 01:03:03,562 - INFO - X_insample shape: torch.Size([469126, 5, 123])
+2024-12-01 01:03:03,562 - INFO - y_insample shape: torch.Size([469126, 1])
+2024-12-01 01:03:03,562 - INFO - y_insample_index shape: 469126
+2024-12-01 01:03:06,496 - INFO - X_test shape: torch.Size([41439, 5, 123])
+2024-12-01 01:03:06,497 - INFO - y_target shape: torch.Size([41439, 1])
+2024-12-01 01:03:06,497 - INFO - y_index shape: 41439
+2024-12-01 01:03:06,580 - INFO - 开始超参调优：
+2024-12-01 01:08:45,712 - INFO - Model configuration: {'hidden_size': 288, 'learning_rate': 0.05, 'batch_size': 256, 'dropout_rate': 0.3}
+2024-12-01 01:08:45,904 - INFO - Epoch: 0
+2024-12-01 01:09:50,123 - INFO - val loss: 0.0046
+2024-12-01 01:09:50,123 - INFO - Epoch: 1
+2024-12-01 01:10:57,334 - INFO - val loss: 0.0045
+2024-12-01 01:10:57,334 - INFO - Epoch: 2
+2024-12-01 01:12:01,455 - INFO - val loss: 0.0046
+2024-12-01 01:12:01,455 - INFO - Epoch: 3
+2024-12-01 01:12:58,583 - INFO - val loss: 0.0045
+2024-12-01 01:12:58,583 - INFO - Epoch: 4
+2024-12-01 01:13:46,853 - INFO - val loss: 0.0045
+2024-12-01 01:13:46,854 - INFO - Epoch: 5
+2024-12-01 01:14:48,162 - INFO - val loss: 0.0045
+2024-12-01 01:14:48,162 - INFO - Epoch: 6
+2024-12-01 01:15:43,707 - INFO - val loss: 0.0045
+2024-12-01 01:15:43,707 - INFO - Epoch: 7
+2024-12-01 01:16:41,514 - INFO - val loss: 0.0066
+2024-12-01 01:16:41,514 - INFO - Epoch: 8
+2024-12-01 01:17:45,607 - INFO - val loss: 0.0061
+2024-12-01 01:17:45,608 - INFO - Epoch: 9
+2024-12-01 01:18:42,396 - INFO - val loss: 0.0072
+2024-12-01 01:18:42,396 - INFO - Epoch: 10
+2024-12-01 01:19:45,153 - INFO - val loss: 0.0070
+2024-12-01 01:19:45,153 - INFO - Epoch: 11
+2024-12-01 01:20:50,964 - INFO - val loss: 0.0048
+2024-12-01 01:20:50,964 - INFO - Epoch: 12
+2024-12-01 01:21:57,668 - INFO - val loss: 0.0051
+2024-12-01 01:21:57,668 - INFO - Epoch: 13
+2024-12-01 01:23:03,880 - INFO - val loss: 0.0051
+2024-12-01 01:23:03,880 - INFO - Epoch: 14
+2024-12-01 01:23:57,981 - INFO - val loss: 0.0046
+2024-12-01 01:23:57,982 - INFO - Epoch: 15
+2024-12-01 01:24:59,396 - INFO - val loss: 0.0045
+2024-12-01 01:24:59,396 - INFO - Early stopping triggered.
+2024-12-01 01:24:59,409 - INFO - best model loss: 0.0045, best model epoch: 5
+2024-12-01 01:25:51,387 - INFO - Window 26, Rank IC insample mean: 0.0641, Rank IC insample std: 0.0145
+2024-12-01 01:25:51,387 - INFO - Window 26, Rank IC outsample mean: 0.0955, Rank IC outsample std: 0.0061
+2024-12-01 01:25:53,061 - INFO - Rolling train-predict completed.
+2024-12-01 01:26:04,747 - INFO - All predictions saved as Parquet.
